@@ -17,3 +17,6 @@
 
 [Guessing Game](https://knowledgeablekangaroo.github.io/guessing-game)
 
+<script src = "script.js">
+
+</script>
