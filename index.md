@@ -1,4 +1,4 @@
 ## Welcome to GitHub Pages
-[order.js](order.js)
+[order.js](https://knowledgeablekangaroo.github.io/order.js/)
 
-[supreme-guacamole](supreme-guacamole)
+[supreme-guacamole](https://knowledgeablekangaroo.github.io/supreme-guacamole/)
