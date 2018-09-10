@@ -5,3 +5,11 @@ window.onload = function() {
   link.href = "/wiki.ico";
   top.document.getElementsByTagName("head")[0].appendChild(link);
 }
+
+function goToHomePage() {
+	window.location = "https://knowledgeablekangaroo.github.io";
+}
+
+function goBack() {
+	window.history.back();
+}

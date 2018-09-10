@@ -6,27 +6,35 @@ permalink: /404.html
 <html>
   <head>
   	<style>
-  		button {
-  			display: block;
+      img {
+        display: block;
+      }
+      
+  		#first-button {
+        margin-top: 50px;
   		}
+
+      button {
+        margin-bottom: 15px;
+        width: 100px;
+        font-size: 20px;
+      }
+
   	</style>
     <title> Page not Found </title>
   </head>
   <body>
     <h1> The page you were looking for was deleted or never existed! </h1>
-    <a title="By Fry1989 eh? [CC BY-SA 3.0 
+    <a target = "_blank" title = "By Fry1989 eh? [CC BY-SA 3.0 
  (https://creativecommons.org/licenses/by-sa/3.0
-)], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Roundel_of_the_Australian_Army.svg">
-      <img width="256" alt="Roundel of the Australian Army" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Roundel_of_the_Australian_Army.svg/256px-Roundel_of_the_Australian_Army.svg.png">
+)], from Wikimedia Commons" href = "https://commons.wikimedia.org/wiki/File:Roundel_of_the_Australian_Army.svg">
+      <img width = "256" alt = "Roundel of the Australian Army" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Roundel_of_the_Australian_Army.svg/256px-Roundel_of_the_Australian_Army.svg.png">
     </a>
 
-	<button onclick="goBack()">Go Back</button>
+	<button id = "first-button" onclick = "goBack()">Go Back</button>
+  <button onclick = "goToHomePage()">Home</a>
 
-	<script>
-	     function goBack() {
-	         window.history.back();
-	     }
-	</script>
+	<script src = "script.js"></script>
 
 </html>
 
