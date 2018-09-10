@@ -9,7 +9,7 @@
 
 [stunning-spoon-of-python](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
 
-[My first html coded website](https://knowledgeablekangaroo.github.io/webpages)
+[My First HTML Coded website](https://knowledgeablekangaroo.github.io/webpages)
 
 [Paint a Picture v2.1.1 Backup](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
@@ -17,6 +17,5 @@
 
 [Guessing Game](https://knowledgeablekangaroo.github.io/guessing-game)
 
-<script src = "script.js">
+<script src = "script.js"></script>
 
-</script>
