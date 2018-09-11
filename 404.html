@@ -6,8 +6,10 @@ permalink: /404.html
 <html>
   <head>
   	<style>
+
       img {
-        display: block;
+        float: left;     
+        margin: 0 5%;
       }
 
   		#first-button {
@@ -15,9 +17,21 @@ permalink: /404.html
   		}
 
       button {
-        margin-bottom: 15px;
-        width: 100px;
+        display: block;
+        margin-top: 15px;
+        width: 30%;
         font-size: 20px;
+      }
+
+      .show {
+        background-color: lightgrey;
+        color: black;
+        width: 30%;
+        display: inline-block;
+      }
+
+      div {
+        display: none;
       }
 
   	</style>
@@ -28,13 +42,29 @@ permalink: /404.html
     <a target = "_blank" title = "By Fry1989 eh? [CC BY-SA 3.0 
  (https://creativecommons.org/licenses/by-sa/3.0
 )], from Wikimedia Commons" href = "https://commons.wikimedia.org/wiki/File:Roundel_of_the_Australian_Army.svg">
-      <img width = "256" alt = "Roundel of the Australian Army" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Roundel_of_the_Australian_Army.svg/256px-Roundel_of_the_Australian_Army.svg.png">
+      <img height = "256" alt = "Roundel of the Australian Army" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Roundel_of_the_Australian_Army.svg/256px-Roundel_of_the_Australian_Army.svg.png">
     </a>
 
-	<button id = "first-button" onclick = "goBack()">Go Back</button>
-  <button onclick = "goToHomePage()">Home</a>
+	<button type = "button" onclick = "goBack()" id = "first-button">Go Back</button>
+  <button type = "button" onclick = "goToHomePage()">Home</a>
+  <button type = "button" onclick = "myFunction()">Why was I sent here?</button>
+  <div id = "toggleHide">
+    You have done one of the following <br />
+    <ul>
+      <li>You typed in an address to a page that doesn't exist in the website</li>
+      <li>You typed in <i>Knowledgeablekangaroo.github.io/404.html</i> into the address bar</li>
+      <li>A link redirected you here whose the address was temporarily moved, permanently moved, or never existed</li>
+    </ul>    
+  </div>
 
+  <script>
+    function myFunction() {
+      const x = document.getElementById("toggleHide");
+      x.classList.toggle("show");
+    }    
+  </script>
 	<script src = "script.js"></script>
+
 
 </html>
 
