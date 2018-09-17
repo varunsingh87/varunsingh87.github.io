@@ -4,6 +4,12 @@ window.onload = function() {
   link.rel = "shortcut icon";
   link.href = "./icon.ico";
   top.document.getElementsByTagName("head")[0].appendChild(link);
+
+  const stylesheetLink = top.document.createElement("link");
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = "style.css";
+  top.document.getElementsByTagName("head")[0].appendChild(link)
 }
 
 function goToHomePage() {
