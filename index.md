@@ -28,5 +28,5 @@
       <img width = "256" alt = "Roundel of the Australian Army" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Roundel_of_the_Australian_Army.svg/256px-Roundel_of_the_Australian_Army.svg.png">
 </a>
 
-<script src = "script.js"></script>
+<script src = "./script.js"></script>
 
