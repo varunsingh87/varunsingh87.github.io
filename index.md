@@ -12,7 +12,7 @@
 
 [Stunning Spoon of Python](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
 
-[First HTML Coded Website](https://knowledgeablekangaroo.github.io/webpages)
+[Kraolity](https://knowledgeablekangaroo.github.io/kraolity)
 
 [How Much Do You Code? Backup](https://knowledgeablekangaroo.github.io/how-much-do-you-code)
 
