@@ -12,7 +12,7 @@
 
 [Stunning Spoon of Python](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
 
-[Kraolity](https://knowledgeablekangaroo.github.io/kraolity)
+[Crystalite](https://knowledgeablekangaroo.github.io/Crystalite)
 
 [How Much Do You Code? Backup](https://knowledgeablekangaroo.github.io/how-much-do-you-code)
 
