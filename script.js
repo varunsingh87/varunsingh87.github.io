@@ -39,7 +39,7 @@ function goBack() {
 function urlExists(url, callback) {
   fetch(url)
   .then(function(status) {
-    callback(ok)
+    callback(status.ok);
   });
 }
 
