@@ -1,26 +1,24 @@
-let url = "";
-
-url = "icon.ico"; // Set url to check if the location being linked to is created
-const link = document.createElement("link"); // Create link element
-link.type = "image/x-icon";
-link.rel = "shortcut icon";
-link.href = url;
-urlExists(url, function(exists) { // Request to check if url exists
+const iconUrl = "icon.ico"; // Set url to check if the location being linked to is created
+const iconLink = document.createElement("link"); // Create link element
+iconLink.type = "image/x-icon";
+iconLink.rel = "shortcut icon";
+iconLink.href = iconUrl;
+urlExists(iconUrl, function(exists) { // Request to check if url exists
 	  if (!exists) {
-	  	link.href = "images/" + url;
+	  	iconLink.href = "images/" + iconUrl;
 	  }
 	}
 );
-document.querySelector("head").appendChild(link);
+document.querySelector("head").appendChild(iconLink);
 
-url = "style.css"; // Set url to check if the location being linked to is created
+const stylesheetUrl = "style.css"; // Set url to check if the location being linked to is created
 const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
-stylesheetLink.href = url;
-urlExists(url, function(exists) { // Request to check if url exists
+stylesheetLink.href = stylesheetUrl;
+urlExists(stylesheetUrl, function(exists) { // Request to check if url exists
 	  if (!exists) {
-	    stylesheetLink.href = "css/" + url;
+	    stylesheetLink.href = "css/" + stylesheetUrl;
 	  }
 	}
 );
