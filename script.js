@@ -11,6 +11,7 @@ const stylesheetUrl = "style.css"; // Set url to check if the location being lin
 const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
+stylesheetLink.href = stylesheetUrl;
 urlExists(stylesheetUrl, stylesheetLink.href);
 
 document.querySelector("head").appendChild(stylesheetLink);
