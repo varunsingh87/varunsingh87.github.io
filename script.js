@@ -3,7 +3,7 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = iconUrl;
-urlExists(iconUrl, iconLink.href);
+urlExists(iconUrl, iconLink.href, 'images/');
 
 document.querySelector("head").appendChild(iconLink);
 
@@ -12,7 +12,7 @@ const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
 stylesheetLink.href = stylesheetUrl;
-urlExists(stylesheetUrl, stylesheetLink.href);
+urlExists(stylesheetUrl, stylesheetLink.href, 'css/');
 
 document.querySelector("head").appendChild(stylesheetLink);
 
@@ -26,13 +26,13 @@ function goBack() {
 	window.history.back();
 }
 
-function urlExists(url, toChange) {
+function urlExists(url, toChange, supposedDir) {
   var request = new XMLHttpRequest();  
 	request.open('GET', url, true);
 	request.onreadystatechange = function(){
 	    if (this.readyState === 4 && this.status === 200){
 	        if (this.status === 404) {  
-	            toChange = 'css/' + toChange;
+	            toChange = supposedDir + '/' + toChange;
 	        }
 	    }
 	};
