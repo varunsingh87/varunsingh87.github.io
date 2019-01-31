@@ -2,7 +2,8 @@ const iconUrl = "icon.ico"; // Set url to check if the location being linked to 
 const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
-iconLink.href = urlExists(iconUrl) ? iconUrl : "images/" + iconUrl;
+iconLink.href = iconUrl;
+urlExists(iconUrl, iconLink.href);
 
 document.querySelector("head").appendChild(iconLink);
 
@@ -10,7 +11,7 @@ const stylesheetUrl = "style.css"; // Set url to check if the location being lin
 const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
-stylesheetLink.href = urlExists(stylesheetUrl) ? stylesheetUrl : "css/" + stylesheetUrl;
+urlExists(stylesheetUrl, stylesheetLink.href);
 
 document.querySelector("head").appendChild(stylesheetLink);
 
@@ -24,15 +25,14 @@ function goBack() {
 	window.history.back();
 }
 
-function urlExists(url) {
+function urlExists(url, toChange) {
   var request = new XMLHttpRequest();  
 	request.open('GET', url, true);
 	request.onreadystatechange = function(){
-	    if (request.readyState === 4){
-	        if (request.status === 404) {  
-	            return false;
-	        }  
-	        return true;
+	    if (this.readyState === 4 && this.status === 200){
+	        if (this.status === 404) {  
+	            toChange = 'css/' + toChange;
+	        }
 	    }
 	};
 	request.send();
