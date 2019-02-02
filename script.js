@@ -30,7 +30,7 @@ function urlExists(url, toChange, supposedDir) {
   var request = new XMLHttpRequest();  
 	request.open('GET', url, true);
 	request.onreadystatechange = function(){
-	    if (this.readyState === 4 && this.status === 200){
+	    if (request.readyState === XMLHttpRequest.DONE){
 	        if (this.status === 404) {  
 	            toChange = supposedDir + '/' + toChange;
 	        }
