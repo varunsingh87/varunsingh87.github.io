@@ -3,7 +3,7 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = iconUrl;
-urlExists(iconUrl, iconLink.href, 'images/');
+urlExists(iconUrl, iconLink.href, 'images');
 
 document.querySelector("head").appendChild(iconLink);
 
@@ -12,7 +12,7 @@ const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
 stylesheetLink.href = stylesheetUrl;
-urlExists(stylesheetUrl, stylesheetLink.href, 'css/');
+urlExists(stylesheetUrl, stylesheetLink.href, 'css');
 
 document.querySelector("head").appendChild(stylesheetLink);
 
