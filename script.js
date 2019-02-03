@@ -26,16 +26,17 @@ function goBack() {
 	window.history.back();
 }
 
+function UrlExists(url)
+{
+    const http = new XMLHttpRequest();
+    http.open('HEAD', url, true);
+    http.send();
+    return http.status != 404;
+}
+
 function urlExists(url, toChange, supposedDir) {
-  const request = new XMLHttpRequest();  
-	request.open('GET', url, true);
-	request.onreadystatechange = function(){
-	    if (request.readyState === XMLHttpRequest.DONE){
-	        if (request.status === 404) {  
-	            toChange = supposedDir + '/' + toChange;
-	        }
-	    }
-	};
-	request.send();
+	if (UrlExists(url)) {
+		toChange = supposedDir + '/' + url;
+	}
 }
 
