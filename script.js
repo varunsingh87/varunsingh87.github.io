@@ -30,7 +30,11 @@ function UrlExists(url)
 {
     const http = new XMLHttpRequest();
     http.open('HEAD', url, true);
-    http.send();
+    try {
+    	http.send();
+    } catch (e) {
+    	return false;
+    }
     return http.status != 404;
 }
 
