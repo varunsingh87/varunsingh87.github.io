@@ -29,7 +29,7 @@ function goBack() {
 function UrlExists(url)
 {
     const http = new XMLHttpRequest();
-    http.open('HEAD', url, true);
+    http.open('GET', url, true);
     try {
     	http.send();
     } catch (e) {
