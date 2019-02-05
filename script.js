@@ -50,7 +50,7 @@ function checkIfUrlExists(toChange, supposedDir) {
     // Creates an object which can read files from the server
     var xhr = new XMLHttpRequest();
 
-    var checkFor = url;
+    var checkFor = toChange;
 
     // Opens the file and specifies the method (get)
     // Asynchronous is true
