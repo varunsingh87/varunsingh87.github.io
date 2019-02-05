@@ -58,10 +58,10 @@ function checkIfUrlExists(toChange, supposedDir) {
 
     //check each time the ready state changes
     //to see if the object is ready
-    reader.onreadystatechange = () => {
-        if (reader.readyState === 4) {
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
             // Check to see whether request for the file failed or succeeded
-            if ((reader.status == 200) || (reader.status == 0)) {
+            if ((xhr.status == 200) || (xhr.status == 0)) {
                 document.location.href = checkFor;
             }
             else { 
@@ -72,7 +72,7 @@ function checkIfUrlExists(toChange, supposedDir) {
 
     }
 
-    reader.send(null);
+    xhr.send(null);
 
 }
 
