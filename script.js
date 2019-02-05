@@ -3,16 +3,15 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = iconUrl;
-urlExists(iconUrl, iconLink.href, 'images');
+checkIfUrlExists(iconUrl, iconLink.href, 'images');
 
 document.querySelector("head").appendChild(iconLink);
 
-const stylesheetUrl = "style.css"; // Set url to check if the location being linked to is created
 const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
-stylesheetLink.href = stylesheetUrl;
-urlExists(stylesheetUrl, stylesheetLink.href, 'css');
+stylesheetLink.href = 'style.css';
+checkIfUrlExists(stylesheetLink.href, 'css');
 
 document.querySelector("head").appendChild(stylesheetLink);
 
@@ -45,5 +44,35 @@ function urlExists(url, toChange, supposedDir) {
 	} else {
         console.log('The url exists.')
     }
+}
+
+function checkIfUrlExists(toChange, supposedDir) {
+    // Creates an object which can read files from the server
+    var xhr = new XMLHttpRequest();
+
+    var checkFor = url;
+
+    // Opens the file and specifies the method (get)
+    // Asynchronous is true
+    xhr.open('get', checkFor, true);
+
+    //check each time the ready state changes
+    //to see if the object is ready
+    reader.onreadystatechange = () => {
+        if (reader.readyState === 4) {
+            // Check to see whether request for the file failed or succeeded
+            if ((reader.status == 200) || (reader.status == 0)) {
+                document.location.href = checkFor;
+            }
+            else { 
+                toChange = supposedDir + '/' + toChange;
+            }
+
+        }
+
+    }
+
+    reader.send(null);
+
 }
 
