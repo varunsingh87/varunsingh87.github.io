@@ -39,8 +39,11 @@ function UrlExists(url)
 }
 
 function urlExists(url, toChange, supposedDir) {
-	if (UrlExists(url)) {
+	if (!UrlExists(url)) {
 		toChange = supposedDir + '/' + url;
-	}
+        console.log('The url does not exist');
+	} else {
+        console.log('The url exists.')
+    }
 }
 
