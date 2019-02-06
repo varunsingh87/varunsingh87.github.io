@@ -12,7 +12,7 @@ const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
 stylesheetLink.href = 'style.css';
-checkIfUrlExists(stylesheetLink.href, 'css/style.css');
+//checkIfUrlExists(stylesheetLink.href, 'css/style.css');
 
 document.head.appendChild(stylesheetLink);
 
