@@ -2,7 +2,9 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
-iconLink.href = checkIfUrlExists(iconLink.href, 'images/icon.ico');
+iconLink.onerror = function() {
+    iconLink.href = 'images/icon.ico';
+};
 
 document.head.appendChild(iconLink);
 
@@ -67,7 +69,7 @@ function checkIfUrlExists(toChange, newDir) {
     // Opens the file and specifies the method (get); Asynchronous is true
     xhr.open('get', checkFor, true);
     xhr.send(null);
-    console.log('Out here, checkFor is', checkFor);
+
     return checkFor;
 
 }
