@@ -61,10 +61,7 @@ function checkIfUrlExists(toChange, supposedDir) {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
             // Check to see whether request for the file failed or succeeded
-            if ((xhr.status == 200) || (xhr.status == 0)) {
-                document.location.href = checkFor;
-            }
-            else { 
+            if (!(xhr.status == 200 && xhr.status == 0)) { 
                 toChange = supposedDir + '/' + toChange;
             }
 
