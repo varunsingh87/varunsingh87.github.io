@@ -3,9 +3,9 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = iconUrl;
-checkIfUrlExists(iconLink.href, 'images/icon.ico');
+iconLink.href = checkIfUrlExists(iconLink.href, 'images/icon.ico');
 
-document.querySelector("head").appendChild(iconLink);
+document.head.appendChild(iconLink);
 
 const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
@@ -13,7 +13,7 @@ stylesheetLink.rel = "stylesheet";
 stylesheetLink.href = 'style.css';
 checkIfUrlExists(stylesheetLink.href, 'css/style.css');
 
-document.querySelector("head").appendChild(stylesheetLink);
+document.head.appendChild(stylesheetLink);
 
 console.log("The style was linked and the favicon was added.");
 
@@ -63,6 +63,8 @@ function checkIfUrlExists(toChange, newDir) {
             // Check to see whether request for the file failed or succeeded
             if (!(xhr.status == 200 || xhr.status == 0)) {
                 checkFor = newDir;
+                console.log('The value of checkFor is', checkFor);
+                console.log('The value of newDir is', newDir);
             }
             console.log('Status: ' + xhr.status);
         }
@@ -71,7 +73,7 @@ function checkIfUrlExists(toChange, newDir) {
 
     xhr.send(null);
 
-    return newDir;
+    return checkFor;
 
 }
 
