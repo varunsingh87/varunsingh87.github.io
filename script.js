@@ -64,9 +64,9 @@ function checkIfUrlExists(toChange, supposedDir) {
             if (!(xhr.status == 200 && xhr.status == 0)) { 
                 toChange = supposedDir + '/' + toChange;
             }
-
+            console.log(xhr.status);
         }
-
+        console.log(xhr.readyState);
     }
 
     xhr.send(null);
