@@ -68,7 +68,7 @@ function checkIfUrlExists(toChange, newDir) {
     }
 
     xhr.send(null);
-
+    console.log('Out here, checkFor is', checkFor);
     return checkFor;
 
 }
