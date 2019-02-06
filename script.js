@@ -63,7 +63,7 @@ function checkIfUrlExists(toChange, supposedDir) {
             // Check to see whether request for the file failed or succeeded
             if (!(xhr.status == 200 && xhr.status == 0)) { 
                 toChange = supposedDir + '/' + toChange;
-                console.log('The above line was printed');
+                console.log('The above line was completed as ' + toChange);
             }
             console.log('Status: ' + xhr.status);
         }
