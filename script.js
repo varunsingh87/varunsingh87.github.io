@@ -3,7 +3,7 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = iconUrl;
-checkIfUrlExists(iconUrl, iconLink.href, 'images');
+checkIfUrlExists(iconLink.href, 'images/icon.ico');
 
 document.querySelector("head").appendChild(iconLink);
 
@@ -11,7 +11,7 @@ const stylesheetLink = document.createElement("link");
 stylesheetLink.type = "text/css";
 stylesheetLink.rel = "stylesheet";
 stylesheetLink.href = 'style.css';
-checkIfUrlExists(stylesheetLink.href, 'css');
+checkIfUrlExists(stylesheetLink.href, 'css/style.css');
 
 document.querySelector("head").appendChild(stylesheetLink);
 
@@ -46,7 +46,7 @@ function urlExists(url, toChange, supposedDir) {
     }
 }
 
-function checkIfUrlExists(toChange, supposedDir) {
+function checkIfUrlExists(toChange, newDir) {
     // Creates an object which can read files from the server
     var xhr = new XMLHttpRequest();
 
@@ -62,7 +62,7 @@ function checkIfUrlExists(toChange, supposedDir) {
         if (xhr.readyState === 4) {
             // Check to see whether request for the file failed or succeeded
             if (!(xhr.status == 200 && xhr.status == 0)) { 
-                toChange = supposedDir + '/' + toChange;
+                toChange = newDir;
                 console.log('The above line was completed as ' + toChange);
             }
             console.log('Status: ' + xhr.status);
