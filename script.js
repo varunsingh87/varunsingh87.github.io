@@ -1,8 +1,7 @@
-const iconUrl = "icon.ico"; // Set url to check if the location being linked to is created
 const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
-iconLink.href = iconUrl;
+iconLink.href = 'icon.ico';
 iconLink.href = checkIfUrlExists(iconLink.href, 'images/icon.ico');
 
 document.head.appendChild(iconLink);
@@ -47,13 +46,10 @@ function urlExists(url, toChange, supposedDir) {
 }
 
 function checkIfUrlExists(toChange, newDir) {
-    // Creates an object which can read files from the server
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest(); // Creates an object which can read files from the server
+    let checkFor = toChange; // Set default value of the url to the original value
 
-    var checkFor = toChange;
-
-    // Opens the file and specifies the method (get)
-    // Asynchronous is true
+    // Opens the file and specifies the method (get); Asynchronous is true
     xhr.open('get', checkFor, true);
 
     //check each time the ready state changes
@@ -62,7 +58,7 @@ function checkIfUrlExists(toChange, newDir) {
         if (xhr.readyState === 4) {
             // Check to see whether request for the file failed or succeeded
             if (!(xhr.status == 200 || xhr.status == 0)) {
-                checkFor = newDir;
+                checkFor = newDir; // If it does not exist, change the value to the new directory
                 console.log('The value of checkFor is', checkFor);
                 console.log('The value of newDir is', newDir);
             }
