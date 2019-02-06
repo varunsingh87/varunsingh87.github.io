@@ -49,9 +49,6 @@ function checkIfUrlExists(toChange, newDir) {
     const xhr = new XMLHttpRequest(); // Creates an object which can read files from the server
     let checkFor = toChange; // Set default value of the url to the original value
 
-    // Opens the file and specifies the method (get); Asynchronous is true
-    xhr.open('get', checkFor, true);
-
     //check each time the ready state changes
     //to see if the object is ready
     xhr.onreadystatechange = () => {
@@ -67,6 +64,8 @@ function checkIfUrlExists(toChange, newDir) {
         console.log('Ready State: ' + xhr.readyState);
     }
 
+    // Opens the file and specifies the method (get); Asynchronous is true
+    xhr.open('get', checkFor, true);
     xhr.send(null);
     console.log('Out here, checkFor is', checkFor);
     return checkFor;
