@@ -3,7 +3,7 @@ iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
 console.log('first', iconLink.href);
-urlExists('icon.ico', iconLink.href, 'images')
+console.log(urlExists('icon.ico', iconLink.href, 'images'))
 console.log('double-function executed', iconLink.href);
 iconLink.href = checkIfUrlExists('icon.ico', 'images/icon.ico');
 console.log('new function executed', iconLink.href);
@@ -46,7 +46,6 @@ function urlExists(url, toChange, supposedDir) {
     let toChange_value = toChange;
 	if (!UrlExists(url)) {
 		toChange_value = supposedDir + '/' + url;
-        console.log(toChange);
         console.log('The url does not exist');
 	} else {
         console.log('The url exists.')
