@@ -2,8 +2,13 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
+console.log('first', iconLink.href);
+iconLink.href = 
+console.log('double-function executed', iconLink.href);
 iconLink.href = checkIfUrlExists('icon.ico', 'images/icon.ico');
+console.log('new function executed', iconLink.href);
 iconLink.href = 'images/icon.ico';
+console.log('location is in folder', iconLink.href);
 
 document.head.appendChild(iconLink);
 
@@ -40,6 +45,7 @@ function UrlExists(url)
 function urlExists(url, toChange, supposedDir) {
 	if (!UrlExists(url)) {
 		toChange = supposedDir + '/' + url;
+        console.log(toChange);
         console.log('The url does not exist');
 	} else {
         console.log('The url exists.')
