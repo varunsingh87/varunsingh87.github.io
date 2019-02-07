@@ -2,15 +2,10 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
-console.log('first', iconLink.href);
-let new_var = urlExists('icon.ico', iconLink.href, 'images');
-console.log(new_var);
-iconLink.href = new_var;
+console.log(urlExists('icon.ico', iconLink.href, 'images'));
 console.log('double-function executed', iconLink.href);
 iconLink.href = checkIfUrlExists('icon.ico', 'images/icon.ico');
 console.log('new function executed', iconLink.href);
-iconLink.href = 'images/icon.ico';
-console.log('location is in folder', iconLink.href);
 
 document.head.appendChild(iconLink);
 
@@ -53,7 +48,7 @@ function urlExists(url, toChange, supposedDir) {
         console.log('The url exists.')
     }
 
-    return toChange_value;
+    return toChange_value.includes(supposedDir);
 }
 
 function checkIfUrlExists(toChange, newDir) {
@@ -69,9 +64,7 @@ function checkIfUrlExists(toChange, newDir) {
         if (xhr.readyState === 4) {
             // Check to see whether request for the file failed or succeeded
             if (!(xhr.status == 200 || xhr.status == 0)) {
-                checkFor = newDir; // If it does not exist, change the value to the new directory
-                console.log('The value of checkFor is', checkFor);
-                console.log('The value of newDir is', newDir);
+                
             }
             console.log('Status: ' + xhr.status);
         }
