@@ -3,7 +3,9 @@ iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
 console.log('first', iconLink.href);
-console.log(urlExists('icon.ico', iconLink.href, 'images'))
+let new_var = urlExists('icon.ico', iconLink.href, 'images');
+console.log(new_var);
+iconLink.href = new_var;
 console.log('double-function executed', iconLink.href);
 iconLink.href = checkIfUrlExists('icon.ico', 'images/icon.ico');
 console.log('new function executed', iconLink.href);
