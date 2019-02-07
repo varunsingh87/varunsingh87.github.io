@@ -2,7 +2,8 @@ const iconLink = document.createElement("link"); // Create link element
 iconLink.type = "image/x-icon";
 iconLink.rel = "shortcut icon";
 iconLink.href = 'icon.ico';
-iconLink.href = checkIfUrlExists('icon.ico', 'fluorence.ico')
+iconLink.href = checkIfUrlExists('icon.ico', 'images/icon.ico');
+iconLink.href = 'images/icon.ico';
 
 document.head.appendChild(iconLink);
 
