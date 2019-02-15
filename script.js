@@ -1,7 +1,7 @@
-createLinkElement('text/css', 'stylesheet', 'style.css');
-createLinkElement('text/css', 'stylesheet', 'css/style.css');
-createLinkElement('image/x-icon', 'shortcut icon', 'icon.ico');
-createLinkElement('image/x-icon', 'shortcut icon', 'images/icon.ico');
+createLinkElement('text/css', 'stylesheet', '/style.css');
+createLinkElement('text/css', 'stylesheet', '/css/style.css');
+createLinkElement('image/x-icon', 'shortcut icon', '/icon.ico');
+createLinkElement('image/x-icon', 'shortcut icon', '/images/icon.ico');
 
 console.log("The style was linked and the favicon was added.");
 
