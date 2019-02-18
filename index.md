@@ -29,4 +29,7 @@
 </a>
 
 <script src = "./script.js"></script>
+<script>
+ createLinkElement('image/x-icon', 'shortcut icon', 'images/icon.ico');
+</script>
 
