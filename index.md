@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+My name is Varun. I am a programmer, tennis player, chess player, runner, Mathlete, coder, poet, and gamer. Below are a list of repositories from GitHub that I made that give information about my project and might even display my project. 
+
 [Order.js](https://knowledgeablekangaroo.github.io/order.js)
 
 [Supreme Guacamole](https://knowledgeablekangaroo.github.io/supreme-guacamole)
