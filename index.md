@@ -4,7 +4,9 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 [Order.js](https://knowledgeablekangaroo.github.io/order.js)
 
-[![Image of an avacado](https://github.com/KnowledgeableKangaroo/supreme-guacamole/blob/master/images/icon.ico)](https://knowledgeablekangaroo.github.io/supreme-guacamole)
+Supreme Guacamole
+
+[<img src = "https://github.com/KnowledgeableKangaroo/supreme-guacamole/blob/master/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/supreme-guacamole)
 
 [Dasmoto's Arts and Crafts](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
 
