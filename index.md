@@ -2,15 +2,21 @@
 
 My name is Varun. I am a programmer, tennis player, chess player, runner, Mathlete, coder, poet, and gamer. Below are a list of repositories from GitHub that I made that give information about my project and might even display my project. 
 
-[Order.js](https://knowledgeablekangaroo.github.io/order.js)
+Order.js
+
+[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
 
 Supreme Guacamole
 
-[<img src = "https://github.com/KnowledgeableKangaroo/supreme-guacamole/blob/master/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/supreme-guacamole)
+[<img src = "https://knowledgeablekangaroo.github.io/supreme-guacamole/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/supreme-guacamole)
 
-[Dasmoto's Arts and Crafts](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
+Dasmoto's Arts and Crafts
 
-[Text Adventure](https://knowledgeablekangaroo.github.io/text-adventure)
+[<img src = "https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
+
+Text Adventure
+
+[<img src = "https://knowledgeablekangaroo.github.io/text-adventure/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/text-adventure)
 
 [Paint a Picture - Processing.js](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
