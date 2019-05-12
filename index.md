@@ -4,7 +4,7 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 Order.js
 
-[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
+[<img src = "knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
 
 Supreme Guacamole
 
@@ -12,17 +12,19 @@ Supreme Guacamole
 
 Dasmoto's Arts and Crafts
 
-[<img src = "https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
+[<img src = "https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/Images/Pattern.jpeg" width = 100>](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
 
 Text Adventure
 
-[<img src = "https://knowledgeablekangaroo.github.io/text-adventure/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/text-adventure)
+[<img src = "https://knowledgeablekangaroo.github.io/text-adventure/icon.png" width = 100>](https://knowledgeablekangaroo.github.io/text-adventure)
 
 Paint a Picture
 
 [<img src = "https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png" width = 100>](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
-[Stunning Spoon of Python](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
+Stunning Spoon of Python
+
+[<img src = "](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
 
 [Crystalite](https://knowledgeablekangaroo.github.io/Crystalite)
 
