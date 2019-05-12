@@ -4,7 +4,7 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 Order.js
 
-[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
+[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
 
 Supreme Guacamole
 
