@@ -8,7 +8,7 @@ Order.js
 
 Supreme Guacamole
 
-[<img src = "https://knowledgeablekangaroo.github.io/supreme-guacamole/images/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/supreme-guacamole)
+[<img src = "https://knowledgeablekangaroo.github.io/supreme-guacamole/images/Avocado.png" width = 100>](https://knowledgeablekangaroo.github.io/supreme-guacamole)
 
 Dasmoto's Arts and Crafts
 
@@ -18,7 +18,9 @@ Text Adventure
 
 [<img src = "https://knowledgeablekangaroo.github.io/text-adventure/icon.ico" width = 100>](https://knowledgeablekangaroo.github.io/text-adventure)
 
-[Paint a Picture - Processing.js](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
+Paint a Picture
+
+[<img src = "https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png" width = 100>](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
 [Stunning Spoon of Python](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
 
