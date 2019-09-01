@@ -4,9 +4,9 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 ## Current Projects
 
-Borum
+[Borum](https://knowledgeablekangaroo.github.io/Borum)
 
-JIC Documentation
+[JIC Documentation](https://knowledgeablekangaroo.github.io/JIC-Documentation)
 
 Frequency Analysis Simulator
 
