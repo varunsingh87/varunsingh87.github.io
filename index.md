@@ -18,7 +18,7 @@ Library System
 
 Order.js
 
-[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
+[![Alt text](https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg)](https://knowledgeablekangaroo.github.io/order.js)
 
 Supreme Guacamole
 
@@ -26,11 +26,11 @@ Supreme Guacamole
 
 Dasmoto's Arts and Crafts
 
-[<img src = "https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/Images/Pattern.jpeg" width = 100>](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
+[![Alt text](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/Images/Pattern.jpeg)](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
 
 Text Adventure
 
-[<img src = "https://knowledgeablekangaroo.github.io/text-adventure/icon.png" width = 100>](https://knowledgeablekangaroo.github.io/text-adventure)
+[![Alt text]("https://knowledgeablekangaroo.github.io/text-adventure/icon.png")](https://knowledgeablekangaroo.github.io/text-adventure)
 
 Paint a Picture
 
