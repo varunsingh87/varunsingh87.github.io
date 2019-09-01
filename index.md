@@ -1,4 +1,4 @@
-# Home of Knowledgeable Kangaroo
+# Knowledgeable Kangaroo Home
 
 My name is Varun. I am a programmer, tennis player, chess player, runner, Mathlete, coder, scientist, American, poet, and gamer. Below are a list of repositories from GitHub that I made that give information about my project and might even display my project. 
 
