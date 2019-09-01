@@ -57,5 +57,6 @@ Guessing Game
 <script src = "./script.js"></script>
 <script>
  createLinkElement('image/x-icon', 'shortcut icon', 'images/icon.ico');
+ createLinkElement('text/css', 'stylesheet', 'style.css');
 </script>
 
