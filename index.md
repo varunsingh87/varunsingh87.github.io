@@ -22,7 +22,7 @@ Order.js
 
 Supreme Guacamole
 
-[![Alt text]("https://knowledgeablekangaroo.github.io/supreme-guacamole/images/Avocado.png")](https://knowledgeablekangaroo.github.io/supreme-guacamole)
+[![Alt text](https://knowledgeablekangaroo.github.io/supreme-guacamole/images/Avocado.png)](https://knowledgeablekangaroo.github.io/supreme-guacamole)
 
 Dasmoto's Arts and Crafts
 
@@ -30,11 +30,11 @@ Dasmoto's Arts and Crafts
 
 Text Adventure
 
-[![Alt text]("https://knowledgeablekangaroo.github.io/text-adventure/icon.png")](https://knowledgeablekangaroo.github.io/text-adventure)
+[![Alt text](https://knowledgeablekangaroo.github.io/text-adventure/icon.png)](https://knowledgeablekangaroo.github.io/text-adventure)
 
 Paint a Picture
 
-[![Alt text]("https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png")](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
+[![Alt text](https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png)](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
 Crystalite
 
