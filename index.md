@@ -1,10 +1,24 @@
-## Welcome to GitHub Pages
+# Home of Knowledgeable Kangaroo
 
-My name is Varun. I am a programmer, tennis player, chess player, runner, Mathlete, coder, poet, and gamer. Below are a list of repositories from GitHub that I made that give information about my project and might even display my project. 
+My name is Varun. I am a programmer, tennis player, chess player, runner, Mathlete, coder, scientist, American, poet, and gamer. Below are a list of repositories from GitHub that I made that give information about my project and might even display my project. 
+
+## Current Projects
+
+Borum
+
+JIC Documentation
+
+Frequency Analysis Simulator
+
+Ravenous
+
+Library System
+
+## Previous/Finished/Archived Projects
 
 Order.js
 
-[<img src = "knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
+[<img src = "https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg" width = 100>](https://knowledgeablekangaroo.github.io/order.js)
 
 Supreme Guacamole
 
@@ -22,13 +36,11 @@ Paint a Picture
 
 [<img src = "https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png" width = 100>](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
 
-Stunning Spoon of Python
-
-[<img src = "](https://knowledgeablekangaroo.github.io/stunning=spoon-of-python)
+Crystalite
 
 [Crystalite](https://knowledgeablekangaroo.github.io/Crystalite)
 
-[How Much Do You Code? Backup](https://knowledgeablekangaroo.github.io/how-much-do-you-code)
+Guessing Game
 
 [Guessing Game](https://knowledgeablekangaroo.github.io/guessing-game)
 
