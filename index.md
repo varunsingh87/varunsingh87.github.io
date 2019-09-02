@@ -16,6 +16,8 @@ Frequency Analysis Simulator
 
 Ravenous
 
+[![Alt text](https://knowledgeablekangaroo.github.io/Ravenous/public/favicon.ico)](https://knowledgeablekangaroo.github.io/Ravenous/)
+
 Library System
 
 ## Previous/Finished/Archived Projects
