@@ -14,6 +14,8 @@ JIC Documentation
 
 Frequency Analysis Simulator
 
+[![Alt text](https://knowlgeablekangaroo.github.io/Frequency-Analysis-Simulator/icon.ico)](https://knowledgeablekangaroo.github.io/Frequency-Analysis-Simulator)
+
 Ravenous
 
 [![Alt text](https://knowledgeablekangaroo.github.io/Ravenous/favicon.ico)](https://knowledgeablekangaroo.github.io/Ravenous/)
