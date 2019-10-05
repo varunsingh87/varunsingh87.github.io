@@ -16,13 +16,13 @@ Frequency Analysis Simulator
 
 [![Alt text](https://knowledgeablekangaroo.github.io/Frequency-Analysis-Simulator/icon.ico)](https://knowledgeablekangaroo.github.io/Frequency-Analysis-Simulator)
 
+## Previous/Finished/Archived Projects
+
 Ravenous
 
 [![Alt text](https://knowledgeablekangaroo.github.io/Ravenous/favicon.ico)](https://knowledgeablekangaroo.github.io/Ravenous/)
 
 Library System
-
-## Previous/Finished/Archived Projects
 
 Order.js
 
