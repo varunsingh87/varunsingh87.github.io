@@ -6,7 +6,7 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 Borum
 
-[![Alt text](https://knowledgeablekangaroo.github.io/Borum/images/icon.png)](https://knowledgeablekangaroo.github.io/Borum)
+[![Alt text](Borum/images/icon.png)](https://knowledgeablekangaroo.github.io/Borum)
 
 JIC Documentation
 
