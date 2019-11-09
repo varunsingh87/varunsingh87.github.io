@@ -6,15 +6,15 @@ My name is Varun. I am a programmer, tennis player, chess player, runner, Mathle
 
 Borum
 
-[![Alt text](Borum/images/icon.png)](https://knowledgeablekangaroo.github.io/Borum)
+[![Alt text](Borum/images/icon.png)](./Borum)
 
 JIC Documentation
 
-[![Alt text](https://knowledgeablekangaroo.github.io/JIC-Documentation/FlagOfJIC.png)](https://knowledgeablekangaroo.github.io/JIC-Documentation)
+[![Alt text](./JIC-Documentation/FlagOfJIC.png)](./JIC-Documentation)
 
 Frequency Analysis Simulator
 
-[![Alt text](https://knowledgeablekangaroo.github.io/Frequency-Analysis-Simulator/icon.ico)](https://knowledgeablekangaroo.github.io/Frequency-Analysis-Simulator)
+[![Alt text](./Frequency-Analysis-Simulator/icon.ico)](./Frequency-Analysis-Simulator)
 
 ## Previous/Finished/Archived Projects
 
