@@ -10,7 +10,7 @@ Borum
 
 JIC Documentation
 
-[![Alt text](./JIC-Documentation/FlagOfJIC.png)](./JIC-Documentation)
+[![Alt text](./JIC-Documentation/images/FlagOfJIC.png)](./JIC-Documentation)
 
 Frequency Analysis Simulator
 
@@ -20,37 +20,37 @@ Frequency Analysis Simulator
 
 Ravenous
 
-[![Alt text](https://knowledgeablekangaroo.github.io/Ravenous/favicon.ico)](https://knowledgeablekangaroo.github.io/Ravenous/)
+[![Alt text](https://borumer.github.io/Ravenous/favicon.ico)](https://borumer.github.io/Ravenous/)
 
 Library System
 
 Order.js
 
-[![Alt text](https://knowledgeablekangaroo.github.io/order.js/images/pizza.jpg)](https://knowledgeablekangaroo.github.io/order.js)
+[![Alt text](https://borumer.github.io/order.js/images/pizza.jpg)](https://borumer.github.io/order.js)
 
 Supreme Guacamole
 
-[![Alt text](https://knowledgeablekangaroo.github.io/supreme-guacamole/images/Avocado.png)](https://knowledgeablekangaroo.github.io/supreme-guacamole)
+[![Alt text](https://borumer.github.io/supreme-guacamole/images/Avocado.png)](https://borumer.github.io/supreme-guacamole)
 
 Dasmoto's Arts and Crafts
 
-[![Alt text](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts/Images/Pattern.jpeg)](https://knowledgeablekangaroo.github.io/Dasmotos-Arts-and-Crafts)
+[![Alt text](https://borumer.github.io/Dasmotos-Arts-and-Crafts/Images/Pattern.jpeg)](https://borumer.github.io/Dasmotos-Arts-and-Crafts)
 
 Text Adventure
 
-[![Alt text](https://knowledgeablekangaroo.github.io/text-adventure/icon.png)](https://knowledgeablekangaroo.github.io/text-adventure)
+[![Alt text](https://borumer.github.io/text-adventure/icon.png)](https://borumer.github.io/text-adventure)
 
 Paint a Picture
 
-[![Alt text](https://knowledgeablekangaroo.github.io/paint-a-picture-backup/paint-pallete.png)](https://knowledgeablekangaroo.github.io/paint-a-picture-backup)
+[![Alt text](https://borumer.github.io/paint-a-picture-backup/paint-pallete.png)](https://borumer.github.io/paint-a-picture-backup)
 
 Crystalite
 
-[Crystalite](https://knowledgeablekangaroo.github.io/Crystalite)
+[Crystalite](https://borumer.github.io/Crystalite)
 
 Guessing Game
 
-[Guessing Game](https://knowledgeablekangaroo.github.io/guessing-game)
+[Guessing Game](https://borumer.github.io/guessing-game)
 
 ## Attributions ##
 
@@ -67,4 +67,3 @@ Guessing Game
  createLinkElement('image/x-icon', 'shortcut icon', 'images/icon.ico');
  createLinkElement('text/css', 'stylesheet', 'style.css');
 </script>
-
