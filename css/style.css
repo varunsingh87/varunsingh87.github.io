@@ -1,0 +1,12 @@
+img {
+  height: 200px;
+}
+
+#projects > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#projects > div.project-type > div {
+	margin: 10px;
+}
