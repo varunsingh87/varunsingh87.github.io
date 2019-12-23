@@ -1,10 +1,12 @@
 img {
+  max-width: 200px;
   height: 200px;
 }
 
 #projects > div {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #projects > div.project-type > div {
