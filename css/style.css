@@ -20,7 +20,7 @@ ul li {
 	background-color: white;
 }
 
-ul li p {
+ul li:not(.show-info) p {
 	height: 20px;
 	margin: 0;
 	padding: 0;	

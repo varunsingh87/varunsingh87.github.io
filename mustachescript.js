@@ -92,6 +92,9 @@ const portfolioData = [
 
 Handlebars.registerPartial('cardBack', `
 <p>{{name}} ({{category}})</p>
+{{#if status}}
+<p>Status: {{status}}</p>
+{{/if}}
 `);
 
 Handlebars.registerPartial('cardFront', `
