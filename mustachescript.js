@@ -58,6 +58,34 @@ const portfolioData = [
         borumProduct: false,
         link: "",
         img: "https://raw.githubusercontent.com/Borumer/Frequency-Analysis-Simulator/master/icon.ico"
+    },
+    {
+        name: "Borum Restaurants",
+
+    },
+    {
+        name: "Borum Feasts",
+    },
+    {
+        name: "Supreme Guacamole",
+    },
+    {
+        name: "Dasmoto's Arts and Crafts",
+    },
+    {
+        name: "Text Adventure"
+    },
+    {
+        name: "Crystalite"
+    },
+    {
+        name: "Guessing Game"
+    },
+    {
+        name: "Borum Q&A"
+    },
+    {
+        name: "JIC Documentation"
     }
 ];
 
@@ -105,5 +133,17 @@ var template = Handlebars.compile(
     </ul>`
 );
 
+const uninteractiveLayout = document.querySelector('#main-content').innerHTML;
+// Save previous layout for conservative site viewers
+function toggleOldLayout(toNew) {
+    const mainContent = document.getElementById('main-content');
+    const templatedLayout = template({portfolioData : portfolioData});
+    if (toNew)
+        mainContent.innerHTML = toNew ? templatedLayout : uninteractiveLayout;
+    else
+        mainContent.innerHTML = mainContent.innerHTML == uninteractiveLayout ? templatedLayout : uninteractiveLayout;
+    }
+
 // execute the compiled template and print the output to the console
-document.getElementById('main-content').innerHTML = template({ portfolioData: portfolioData });
+toggleOldLayout(true);
+
