@@ -134,33 +134,25 @@ Handlebars.registerPartial('cardFront', `
 {{/if}}
 `);
 
-let compileHandlebarsWithCurrentItem = (el, ind, partial) => {
-    el.innerHTML = Handlebars.compile(`{{> ${partial} }}`)(portfolioData[ind]);
-};
-
-function displayInfo(el, ind, event) {
-    event.stopPropagation();
-    el.classList.toggle('show-info');
-
-    let compile = function (partial) {
-        compileHandlebarsWithCurrentItem(el, ind, partial)
-    };
-
-    compile(el.classList.contains('show-info') ? 'cardBack' : 'cardFront')
-}
-
 // Removes spaces to make id and class names valid
 Handlebars.registerHelper('removeSpaces', function (value) {
     return value.replace(" ", "");
 })
+
+function toggleHover(el) {
+    el.classList.toggle('hover');
+}
 
 // compile the template
 var template = Handlebars.compile(
     `<ul class = 'd-flex p-2 flex-wrap project-list'>
     
     {{#each portfolioData}}
-    <li id="project-{{removeSpaces name}}" onclick="displayInfo(this, {{@index}}, event)">
-    {{> cardFront}}
+    <li id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
+        <div class = "flipper">
+            <div class = "front">{{> cardFront}}</div>
+            <div class = "back">{{> cardBack}}</div>
+        </div>
     </li>
     {{/each}}
     </ul>`
