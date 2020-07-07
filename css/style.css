@@ -27,15 +27,17 @@ ul li:not(.show-info) p {
 }
 
 #container .inner ul li img {
+	background-color: white;
+	object-fit: contain;
 	height: 150px;
 }
 
-.project-list img {
-	background-color: white;
-	object-fit: contain;
+#container .inner ul li a {
+	text-decoration: none;
 }
 
 .project-list .show-info {
 	background-color: black;
 	color: white;
+	transition: 0.4s ease-in-out;
 }

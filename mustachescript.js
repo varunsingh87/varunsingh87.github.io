@@ -4,7 +4,7 @@ const portfolioData = [
         category: "Personal",
         status: "Current",
         borumProduct: true,
-        link: "",
+        link: "https://github.com/Borumer/BorumFarms",
         img: "https://raw.githubusercontent.com/Borumer/BorumFarms/master/images/whitelogo.jpg"
     },
     {
@@ -61,31 +61,57 @@ const portfolioData = [
     },
     {
         name: "Borum Restaurants",
-
+        category: "Tutorial",
+        status: "Ended",
+        borumProduct: true,
     },
     {
         name: "Borum Feasts",
+        category: "Personal",
+        status: "Ended",
+        borumProduct: true,
     },
     {
         name: "Supreme Guacamole",
+        category: "Tutorial",
+        status: "Ended",
+        borumProduct: false,
     },
     {
         name: "Dasmoto's Arts and Crafts",
+        category: "Tutorial",
+        status: "Ended",
+        borumProduct: false,
     },
     {
-        name: "Text Adventure"
+        name: "Text Adventure",
+        category: "Personal",
+        status: "Ended",
+        borumProduct: false,
     },
     {
-        name: "Crystalite"
+        name: "Crystalite",
+        category: "Personal",
+        status: "Ended",
+        borumProduct: false,
     },
     {
-        name: "Guessing Game"
+        name: "Guessing Game",
+        category: "Tutorial",
+        status: "Ended",
+        borumProduct: false,
     },
     {
-        name: "Borum Q&A"
+        name: "Borum Q&A",
+        category: "Personal",
+        status: "Ended",
+        borumProduct: true,
     },
     {
-        name: "JIC Documentation"
+        name: "JIC Documentation",
+        category: "Others",
+        status: "Ended",
+        borumProduct: false
     }
 ];
 
@@ -94,6 +120,10 @@ Handlebars.registerPartial('cardBack', `
 <p>{{name}} ({{category}})</p>
 {{#if status}}
 <p>Status: {{status}}</p>
+{{#if borumProduct}}
+<img src='http://cdn.bforborum.com/images/icon.png' style='width:100%; background: none; display:block; height:20px'>
+{{/if}}
+<a target="_blank" href="{{link}}">View</a>
 {{/if}}
 `);
 
@@ -108,19 +138,19 @@ let compileHandlebarsWithCurrentItem = (el, ind, partial) => {
     el.innerHTML = Handlebars.compile(`{{> ${partial} }}`)(portfolioData[ind]);
 };
 
-function displayInfo(el, ind) {
+function displayInfo(el, ind, event) {
+    event.stopPropagation();
     el.classList.toggle('show-info');
 
-    let compile = function(partial) {
+    let compile = function (partial) {
         compileHandlebarsWithCurrentItem(el, ind, partial)
     };
 
-    compile(el.classList.contains('show-info') ? 'cardBack' : 'cardFront');
-    
+    compile(el.classList.contains('show-info') ? 'cardBack' : 'cardFront')
 }
 
 // Removes spaces to make id and class names valid
-Handlebars.registerHelper('removeSpaces', function(value) {
+Handlebars.registerHelper('removeSpaces', function (value) {
     return value.replace(" ", "");
 })
 
@@ -129,7 +159,7 @@ var template = Handlebars.compile(
     `<ul class = 'd-flex p-2 flex-wrap project-list'>
     
     {{#each portfolioData}}
-    <li id="project-{{removeSpaces name}}" onclick="displayInfo(this, {{@index}})">
+    <li id="project-{{removeSpaces name}}" onclick="displayInfo(this, {{@index}}, event)">
     {{> cardFront}}
     </li>
     {{/each}}
@@ -140,12 +170,12 @@ const uninteractiveLayout = document.querySelector('#main-content').innerHTML;
 // Save previous layout for conservative site viewers
 function toggleOldLayout(toNew) {
     const mainContent = document.getElementById('main-content');
-    const templatedLayout = template({portfolioData : portfolioData});
+    const templatedLayout = template({ portfolioData: portfolioData });
     if (toNew)
         mainContent.innerHTML = toNew ? templatedLayout : uninteractiveLayout;
     else
         mainContent.innerHTML = mainContent.innerHTML == uninteractiveLayout ? templatedLayout : uninteractiveLayout;
-    }
+}
 
 // execute the compiled template and print the output to the console
 toggleOldLayout(true);
