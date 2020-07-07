@@ -27,13 +27,13 @@ ul li:not(.show-info) .front p {
 	padding: 0;	
 }
 
-#container .inner ul li img {
+#container ul li img {
 	background-color: white;
 	object-fit: contain;
 	height: 150px;
 }
 
-#container .inner ul li a {
+#container ul li a {
 	text-decoration: none;
 }
 
