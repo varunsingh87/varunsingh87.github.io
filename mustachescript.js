@@ -11,14 +11,14 @@ const portfolioData = [
         name: "EcoFriend",
         category: "Hackathon",
         status: "Ended",
-        link: "",
+        link: "https://devpost.com/software/enviroshare",
         img: "https://raw.githubusercontent.com/Borumer/EcoFriend/master/assets/images/icon.png"
     },
     {
         name: "FarmaKarma",
         category: "Hackathon",
         status: "Current",
-        link: "",
+        link: "https://devpost.com/software/FarmaKarma",
         img: "https://raw.githubusercontent.com/Borumer/FarmaKarma/master/img_typo.jpg"
     },
     {
@@ -26,6 +26,7 @@ const portfolioData = [
         category: "Personal",
         status: "Future",
         borumProduct: true,
+        link: "http://chat.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png"
     },
     {
@@ -33,6 +34,7 @@ const portfolioData = [
         category: "Personal",
         status: "Current",
         borumProduct: true,
+        link: "http://audio.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/Flytrap/master/images/icon.png",
     },
     {
@@ -40,7 +42,7 @@ const portfolioData = [
         category: "Personal",
         status: "Ended",
         borumProduct: true,
-        link: "",
+        link: "http://paint.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png"
     },
     {
@@ -56,7 +58,7 @@ const portfolioData = [
         category: "Personal",
         status: "Ended",
         borumProduct: false,
-        link: "",
+        link: "https://borumer.github.io/Frequency-Analysis-Simulator",
         img: "https://raw.githubusercontent.com/Borumer/Frequency-Analysis-Simulator/master/icon.ico"
     },
     {
@@ -64,36 +66,42 @@ const portfolioData = [
         category: "Tutorial",
         status: "Ended",
         borumProduct: true,
+        link: "http://restaurants.bforborum.com"
     },
     {
         name: "Borum Feasts",
         category: "Personal",
         status: "Ended",
         borumProduct: true,
+        link: "http://feasts.bforborum.com"
     },
     {
         name: "Supreme Guacamole",
         category: "Tutorial",
         status: "Ended",
         borumProduct: false,
+        link: "https://borumer.github.io/supreme-guacamole/"
     },
     {
         name: "Dasmoto's Arts and Crafts",
         category: "Tutorial",
         status: "Ended",
         borumProduct: false,
+        link: "https://borumer.github.io/Dasmotos-Arts-and-Crafts/"
     },
     {
         name: "Text Adventure",
         category: "Personal",
         status: "Ended",
         borumProduct: false,
+        link: "https://borumer.github.io/text-adventure"
     },
     {
         name: "Crystalite",
         category: "Personal",
         status: "Ended",
         borumProduct: false,
+        link: "https://borumer.github.io/Crystalite/"
     },
     {
         name: "Guessing Game",
@@ -106,12 +114,16 @@ const portfolioData = [
         category: "Personal",
         status: "Ended",
         borumProduct: true,
+        link: "http://www.bforborum.com",
+        img: "http://cdn.bforborum.com/images/icon.png"
     },
     {
         name: "JIC Documentation",
         category: "Others",
         status: "Ended",
-        borumProduct: false
+        borumProduct: false,
+        link: "https://borumer.github.io/JIC-Documentation/",
+        img: "https://borumer.github.io/JIC-Documentation/images/JIC%20Onion.png"
     }
 ];
 
@@ -123,7 +135,7 @@ Handlebars.registerPartial('cardBack', `
 {{#if borumProduct}}
 <img src='http://cdn.bforborum.com/images/icon.png' style='width:100%; background: none; display:block; height:20px'>
 {{/if}}
-<a target="_blank" href="{{link}}">View</a>
+<a onclick="event.stopPropagation()" target="_blank" href="{{link}}">View</a>
 {{/if}}
 `);
 
