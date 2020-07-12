@@ -5,21 +5,37 @@ const portfolioData = [
         status: "Current",
         borumProduct: true,
         link: "https://github.com/Borumer/BorumFarms",
-        img: "https://raw.githubusercontent.com/Borumer/BorumFarms/master/images/whitelogo.jpg"
+        img: "https://raw.githubusercontent.com/Borumer/BorumFarms/master/images/whitelogo.jpg",
+        softwareDevelopmentTools: {
+            languages: ['Java'],
+            frameworks: ['Swing'],
+        }
     },
     {
         name: "EcoFriend",
         category: "Hackathon",
         status: "Ended",
         link: "https://devpost.com/software/enviroshare",
-        img: "https://raw.githubusercontent.com/Borumer/EcoFriend/master/assets/images/icon.png"
+        img: "https://raw.githubusercontent.com/Borumer/EcoFriend/master/assets/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['Dart'],
+            apis: ['Flutter']
+        }
     },
     {
         name: "FarmaKarma",
         category: "Hackathon",
         status: "Current",
         link: "https://devpost.com/software/FarmaKarma",
-        img: "https://raw.githubusercontent.com/Borumer/FarmaKarma/master/img_typo.jpg"
+        img: "https://raw.githubusercontent.com/Borumer/FarmaKarma/master/img_typo.jpg",
+        softwareDevelopmentTools: {
+            languages: ['JavaScript', 'HTML', 'CSS'],
+            libraries: ['csvtojson', 'axios'],
+            apis: ['USDA API'],
+            frameworks: ['Express'],
+            serverEnvironment: 'NodeJS',
+            
+        }
     },
     {
         name: "Chatfish",
@@ -27,7 +43,11 @@ const portfolioData = [
         status: "Future",
         borumProduct: true,
         link: "http://chat.bforborum.com",
-        img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png"
+        img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['C#', 'XAML'],
+            frameworks: ['.NET', 'WPF'],
+        }
     },
     {
         name: "Flytrap",
@@ -36,6 +56,9 @@ const portfolioData = [
         borumProduct: true,
         link: "http://audio.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/Flytrap/master/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['PHP', 'HTML', 'CSS', 'JavaScript', 'SQL'],
+        }
     },
     {
         name: "Borum Paint",
@@ -43,7 +66,11 @@ const portfolioData = [
         status: "Ended",
         borumProduct: true,
         link: "http://paint.bforborum.com",
-        img: "https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png"
+        img: "https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png",
+        softwareDevelopmentTools: {
+            languages: ['Processing', 'JavaScript', 'HTML'],
+            library: ['p5.js'],
+        }
     },
     {
         name: "Library System",
@@ -51,7 +78,10 @@ const portfolioData = [
         status: "Ended",
         borumProduct: false,
         link: "",
-        img: "https://raw.githubusercontent.com/Borumer/Library_System/master/icon.png"
+        img: "https://raw.githubusercontent.com/Borumer/Library_System/master/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['C#']
+        }
     },
     {
         name: "Frequency Analysis Simulator",
@@ -59,7 +89,12 @@ const portfolioData = [
         status: "Ended",
         borumProduct: false,
         link: "https://borumer.github.io/Frequency-Analysis-Simulator",
-        img: "https://raw.githubusercontent.com/Borumer/Frequency-Analysis-Simulator/master/icon.ico"
+        img: "https://raw.githubusercontent.com/Borumer/Frequency-Analysis-Simulator/master/icon.ico",
+        softwareDevelopmentTools: {
+            languages: ['Java'],
+            libraries: ['extJWNL'],
+            apis: ['WordNet']
+        }
     },
     {
         name: "Borum Restaurants",
@@ -115,7 +150,12 @@ const portfolioData = [
         status: "Ended",
         borumProduct: true,
         link: "http://www.bforborum.com",
-        img: "http://cdn.bforborum.com/images/icon.png"
+        img: "http://cdn.bforborum.com/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['PHP', 'SQL', 'HTML', 'CSS', 'JavaScript'],
+            frameworks: ['Bootstrap'],
+            libraries: ['jQuery']
+        }
     },
     {
         name: "JIC Documentation",
@@ -123,7 +163,10 @@ const portfolioData = [
         status: "Ended",
         borumProduct: false,
         link: "https://borumer.github.io/JIC-Documentation/",
-        img: "https://borumer.github.io/JIC-Documentation/images/JIC%20Onion.png"
+        img: "https://borumer.github.io/JIC-Documentation/images/JIC%20Onion.png",
+        softwareDevelopmentTools: {
+            languages: ['HTML', 'CSS']
+        }
     }
 ];
 
@@ -146,9 +189,21 @@ Handlebars.registerPartial('cardFront', `
 {{/if}}
 `);
 
+Handlebars.registerPartial('backTitle',
+`Made with {{softwareDevelopmentTools.languages}}
+{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}
+{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}
+{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}
+`)
+
 // Removes spaces to make id and class names valid
 Handlebars.registerHelper('removeSpaces', function (value) {
     return value.replace(" ", "");
+})
+
+Handlebars.registerHelper('writeOtherTools', function (name, arr) {
+    if (arr) 
+        return `Utilizing the following ${name}: ${arr}`;
 })
 
 function toggleHover(el) {
@@ -163,7 +218,7 @@ var template = Handlebars.compile(
     <li id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
         <div class = "flipper">
             <div class = "front">{{> cardFront}}</div>
-            <div class = "back">{{> cardBack}}</div>
+            <div title="{{> backTitle}}" class = "back">{{> cardBack}}</div>
         </div>
     </li>
     {{/each}}
