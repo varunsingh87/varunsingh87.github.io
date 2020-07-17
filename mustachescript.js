@@ -77,8 +77,8 @@ const portfolioData = [
         category: "Personal",
         status: "Ended",
         borumProduct: false,
-        link: "",
-        img: "https://raw.githubusercontent.com/Borumer/Library_System/master/icon.png",
+        link: "https://library-management-system.glitch.me/",
+        img: "https://cdn.glitch.com/65f2c798-3d83-4eea-9b3c-130c150e928b%2Flmsicon.png?v=1594941302927",
         softwareDevelopmentTools: {
             languages: ['C#']
         }
