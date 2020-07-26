@@ -1,5 +1,17 @@
 const portfolioData = [
     {
+        name: "Borum Jot",
+        category: "Personal",
+        status: "Planning",
+        borumProduct: true,
+        link: "http://jot.bforborum.com",
+        img: "http://jot.bforborum.com/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['Java', 'XML', 'PHP'],
+            apis: ['Android'],
+        }
+    },
+    {
         name: "Borum Farms",
         category: "Personal",
         status: "Current",
@@ -27,20 +39,19 @@ const portfolioData = [
         category: "Hackathon",
         status: "Current",
         link: "https://devpost.com/software/FarmaKarma",
-        img: "https://raw.githubusercontent.com/Borumer/FarmaKarma/master/img_typo.jpg",
+        img: "https://cdn.glitch.com/abf7c191-9bf8-48f2-a97c-4ade2e75e824%2Fimg_typo.jpg?v=1594932645362",
         softwareDevelopmentTools: {
             languages: ['JavaScript', 'HTML', 'CSS'],
             libraries: ['csvtojson', 'axios'],
             apis: ['USDA API'],
             frameworks: ['Express'],
-            serverEnvironment: 'NodeJS',
-            
+            serverEnvironment: 'NodeJS'
         }
     },
     {
         name: "Chatfish",
         category: "Personal",
-        status: "Future",
+        status: "Planning",
         borumProduct: true,
         link: "http://chat.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png",
@@ -101,28 +112,42 @@ const portfolioData = [
         category: "Tutorial",
         status: "Ended",
         borumProduct: true,
-        link: "http://restaurants.bforborum.com"
+        link: "http://restaurants.bforborum.com",
+        img: "http://restaurants.bforborum.com/favicon.ico"
     },
     {
         name: "Borum Feasts",
         category: "Personal",
         status: "Ended",
         borumProduct: true,
-        link: "http://feasts.bforborum.com"
+        link: "http://feasts.bforborum.com",
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/54/Cheese_and_Pepperoni_Pizza_%284825046245%29.jpg",
+        softwareDevelopmentTools: {
+            languages: ['HTML', 'CSS', 'JavaScript'],
+        }
     },
     {
         name: "Supreme Guacamole",
         category: "Tutorial",
         status: "Ended",
         borumProduct: false,
-        link: "https://borumer.github.io/supreme-guacamole/"
+        link: "https://borumer.github.io/supreme-guacamole/",
+        img: "https://borumer.github.io/supreme-guacamole/images/icon.ico",
+        softwareDevelopmentTools: {
+            languages: ['HTML', 'Java', 'JavaScript', 'Processing'],
+            libraries: ['Handlebars', 'LoDash']
+        }
     },
     {
         name: "Dasmoto's Arts and Crafts",
         category: "Tutorial",
         status: "Ended",
         borumProduct: false,
-        link: "https://borumer.github.io/Dasmotos-Arts-and-Crafts/"
+        link: "https://borumer.github.io/Dasmotos-Arts-and-Crafts/",
+        img: "https://borumer.github.io/Dasmotos-Arts-and-Crafts/icon.ico",
+        softwareDevelopmentTools: {
+            languages: ['HTML', 'CSS']
+        }
     },
     {
         name: "Text Adventure",
