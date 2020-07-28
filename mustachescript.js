@@ -1,4 +1,4 @@
-const portfolioData = [
+let portfolioData = [
     {
         name: "Borum Jot",
         category: "Personal",
@@ -9,7 +9,8 @@ const portfolioData = [
         softwareDevelopmentTools: {
             languages: ['Java', 'XML', 'PHP'],
             apis: ['Android'],
-        }
+        },
+        years: "2020"
     },
     {
         name: "Borum Farms",
@@ -21,7 +22,8 @@ const portfolioData = [
         softwareDevelopmentTools: {
             languages: ['Java'],
             frameworks: ['Swing'],
-        }
+        },
+        years: "2020-Present"
     },
     {
         name: "EcoFriend",
@@ -32,12 +34,13 @@ const portfolioData = [
         softwareDevelopmentTools: {
             languages: ['Dart'],
             apis: ['Flutter']
-        }
+        },
+        years: "2020",
     },
     {
         name: "FarmaKarma",
         category: "Hackathon",
-        status: "Current",
+        status: "Ended",
         link: "https://devpost.com/software/FarmaKarma",
         img: "https://cdn.glitch.com/abf7c191-9bf8-48f2-a97c-4ade2e75e824%2Fimg_typo.jpg?v=1594932645362",
         softwareDevelopmentTools: {
@@ -46,7 +49,8 @@ const portfolioData = [
             apis: ['USDA API'],
             frameworks: ['Express'],
             serverEnvironment: 'NodeJS'
-        }
+        },
+        years: "2020",
     },
     {
         name: "Chatfish",
@@ -63,13 +67,14 @@ const portfolioData = [
     {
         name: "Flytrap",
         category: "Personal",
-        status: "Current",
+        status: "Ended",
         borumProduct: true,
         link: "http://audio.bforborum.com",
         img: "https://raw.githubusercontent.com/Borumer/Flytrap/master/images/icon.png",
         softwareDevelopmentTools: {
             languages: ['PHP', 'HTML', 'CSS', 'JavaScript', 'SQL'],
-        }
+        },
+        years: "2020"
     },
     {
         name: "Borum Paint",
@@ -92,7 +97,8 @@ const portfolioData = [
         img: "https://cdn.glitch.com/65f2c798-3d83-4eea-9b3c-130c150e928b%2Flmsicon.png?v=1594941302927",
         softwareDevelopmentTools: {
             languages: ['C#']
-        }
+        },
+        years: "2019"
     },
     {
         name: "Frequency Analysis Simulator",
@@ -105,7 +111,8 @@ const portfolioData = [
             languages: ['Java'],
             libraries: ['extJWNL'],
             apis: ['WordNet']
-        }
+        },
+        years: "2019-2020"
     },
     {
         name: "Borum Restaurants",
@@ -113,7 +120,11 @@ const portfolioData = [
         status: "Ended",
         borumProduct: true,
         link: "http://restaurants.bforborum.com",
-        img: "http://restaurants.bforborum.com/favicon.ico"
+        img: "http://restaurants.bforborum.com/favicon.ico",
+        softwareDevelopmentTools: {
+            languages: ['JavaScript'],
+            libraries: ['React']
+        }
     },
     {
         name: "Borum Feasts",
@@ -154,11 +165,16 @@ const portfolioData = [
         category: "Personal",
         status: "Ended",
         borumProduct: false,
-        link: "https://borumer.github.io/text-adventure"
+        link: "https://borumer.github.io/text-adventure",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Terminalicon2.png/512px-Terminalicon2.png",
+        softwareDevelopmentTools: {
+            languages: ['Java']
+        },
+        years: "2017-2018"
     },
     {
         name: "Crystalite",
-        category: "Personal",
+        category: "Tutorial",
         status: "Ended",
         borumProduct: false,
         link: "https://borumer.github.io/Crystalite/"
@@ -180,21 +196,38 @@ const portfolioData = [
             languages: ['PHP', 'SQL', 'HTML', 'CSS', 'JavaScript'],
             frameworks: ['Bootstrap'],
             libraries: ['jQuery']
-        }
+        },
+        years: "2018-2020"
     },
-    {
-        name: "JIC Documentation",
-        category: "Others",
-        status: "Ended",
-        borumProduct: false,
-        link: "https://borumer.github.io/JIC-Documentation/",
-        img: "https://borumer.github.io/JIC-Documentation/images/JIC%20Onion.png",
-        softwareDevelopmentTools: {
-            languages: ['HTML', 'CSS']
-        }
-    }
 ];
 
+portfolioData = portfolioData.filter(el => el.category !== "Tutorial");
+
+Array.prototype.unique = function() {
+    var a = this.concat();
+    for(var i=0; i<a.length; ++i) {
+        for(var j=i+1; j<a.length; ++j) {
+            if(a[i] === a[j])
+                a.splice(j--, 1);
+        }
+    }
+
+    return a;
+};
+
+let skillData = []
+    .concat
+    .apply( // Converts 2-D to 1-D array
+        [], 
+        portfolioData
+            .map(el => []
+                .concat
+                .apply( // Converts 2-D to 1-D array
+                    [], 
+                    Object.values(el.softwareDevelopmentTools) // Merges different types of tools
+                )
+            )
+    ).unique(); // Removes duplicates
 
 Handlebars.registerPartial('cardBack', `
 <p>{{name}} ({{category}})</p>
@@ -216,9 +249,9 @@ Handlebars.registerPartial('cardFront', `
 
 Handlebars.registerPartial('backTitle',
 `Made with {{softwareDevelopmentTools.languages}}
-{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}
-{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}
-{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}
+{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}<br>
+{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}<br>
+{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}<br>
 `)
 
 // Removes spaces to make id and class names valid
@@ -231,36 +264,49 @@ Handlebars.registerHelper('writeOtherTools', function (name, arr) {
         return `Utilizing the following ${name}: ${arr}`;
 })
 
+Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+    if(v1 === v2) {
+      return options.fn(this);
+    }
+    return options.inverse(this);
+  });
+
 function toggleHover(el) {
     el.classList.toggle('hover');
 }
 
-// compile the template
-var template = Handlebars.compile(
-    `<ul class = 'd-flex p-2 flex-wrap project-list'>
-    
-    {{#each portfolioData}}
-    <li id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
-        <div class = "flipper">
-            <div class = "front">{{> cardFront}}</div>
-            <div title="{{> backTitle}}" class = "back">{{> cardBack}}</div>
-        </div>
-    </li>
-    {{/each}}
-    </ul>`
-);
+const projects = `<h2>Projects</h2>
+<ul class = 'd-flex p-2 flex-wrap project-list'>
+{{#each portfolioData}}
+{{#ifCond category "Tutorial"}}
+{{else}}
+<li style="z-index:calc({{../portfolioData.length}} - {{@index}} + 1)" id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
+    <div class = "flipper">
+        <div class = "front">{{> cardFront}}</div>
+        <div class = "back">{{> cardBack}}</div>
+    </div>
+    <p class="tooltip">{{> backTitle}}</p>
+</li>
+{{/ifCond}}
+{{/each}}
+</ul>`;
 
-const uninteractiveLayout = document.querySelector('#main-content').innerHTML;
-// Save previous layout for conservative site viewers
-function toggleOldLayout(toNew) {
+const skills = `<h2>Skills</h2>
+<ul class = 'skills-stack'>
+{{#each skillData}}
+<li id="skill-{{@index}}">{{this}}</li>
+{{/each}}
+</ul>`;
+
+function displayContent() {
+    // compile the template
+    const template = Handlebars.compile(projects.concat(skills));
     const mainContent = document.getElementById('main-content');
-    const templatedLayout = template({ portfolioData: portfolioData });
-    if (toNew)
-        mainContent.innerHTML = toNew ? templatedLayout : uninteractiveLayout;
-    else
-        mainContent.innerHTML = mainContent.innerHTML == uninteractiveLayout ? templatedLayout : uninteractiveLayout;
+    const templatedLayout = template({ portfolioData, skillData });
+    mainContent.innerHTML = templatedLayout;
 }
 
 // execute the compiled template and print the output to the console
-toggleOldLayout(true);
+displayContent();
+
 

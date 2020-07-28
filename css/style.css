@@ -9,8 +9,7 @@
 	width: 250px;
 }
 
-ul li {
-	border: 1px solid black;
+.project-list li {
 	list-style-type: none;
 	width: 150px;
 	height: 170px;
@@ -21,13 +20,13 @@ ul li {
 	perspective: 1000px;
 }
 
-ul li:not(.show-info) .front p {
+.project-list li:not(.show-info) .front p {
 	height: 20px;
 	margin: 0;
 	padding: 0;	
 }
 
-#container ul li img {
+#container .project-list li img {
 	background-color: white;
 	object-fit: contain;
 	height: 150px;
@@ -78,3 +77,24 @@ ul li:not(.show-info) .front p {
 	color: white;
 }
 
+.tooltip {
+	visibility: hidden;
+	opacity: 1;
+	background-color: beige;
+	color: black;
+	padding: 1em;
+	left: 150px;
+	min-width: 200px;
+	top: 0;
+}
+
+.flip-container:hover .tooltip {
+	visibility: visible;
+}
+
+/** Skill Stack */
+
+.skills-stack li {
+	list-style-type: none;
+	display: inline-block;
+}

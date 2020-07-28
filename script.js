@@ -1,7 +1,7 @@
 console.log("The style was linked and the favicon was added.");
 
 function goToHomePage() {
-	window.location = "https://knowledgeablekangaroo.github.io";
+	window.location = "https://borumer.github.io";
 }
 
 function goBack() {
