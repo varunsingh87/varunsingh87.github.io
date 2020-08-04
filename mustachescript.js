@@ -1,4 +1,17 @@
-let portfolioData = [
+let projectData = [
+    {
+        name: "North Star",
+        category: "Hackathon",
+        status: "Finishing",
+        borumProduct: false,
+        link: "https://devpost.com/software/north-star-xio17y",
+        img: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/173/541/datas/medium.png",
+        softwareDevelopmentTools: {
+            languages: ['Dart'],
+            apis: ['Flutter'],
+        },
+        years: "2020"
+    },
     {
         name: "Borum Jot",
         category: "Personal",
@@ -13,9 +26,21 @@ let portfolioData = [
         years: "2020"
     },
     {
+        name: "Chatfish",
+        category: "Personal",
+        status: "Planning",
+        borumProduct: true,
+        link: "http://chat.bforborum.com",
+        img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png",
+        softwareDevelopmentTools: {
+            languages: ['C#', 'XAML'],
+            frameworks: ['.NET', 'WPF'],
+        }
+    },
+    {
         name: "Borum Farms",
         category: "Personal",
-        status: "Current",
+        status: "Future",
         borumProduct: true,
         link: "https://github.com/Borumer/BorumFarms",
         img: "https://raw.githubusercontent.com/Borumer/BorumFarms/master/images/whitelogo.jpg",
@@ -51,18 +76,6 @@ let portfolioData = [
             serverEnvironment: 'NodeJS'
         },
         years: "2020",
-    },
-    {
-        name: "Chatfish",
-        category: "Personal",
-        status: "Planning",
-        borumProduct: true,
-        link: "http://chat.bforborum.com",
-        img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png",
-        softwareDevelopmentTools: {
-            languages: ['C#', 'XAML'],
-            frameworks: ['.NET', 'WPF'],
-        }
     },
     {
         name: "Flytrap",
@@ -201,7 +214,7 @@ let portfolioData = [
     },
 ];
 
-portfolioData = portfolioData.filter(el => el.category !== "Tutorial");
+projectData = projectData.filter(el => el.category !== "Tutorial");
 
 Array.prototype.unique = function() {
     var a = this.concat();
@@ -219,7 +232,7 @@ let skillData = []
     .concat
     .apply( // Converts 2-D to 1-D array
         [], 
-        portfolioData
+        projectData
             .map(el => []
                 .concat
                 .apply( // Converts 2-D to 1-D array
@@ -277,10 +290,10 @@ function toggleHover(el) {
 
 const projects = `<h2>Projects</h2>
 <ul class = 'd-flex p-2 flex-wrap project-list'>
-{{#each portfolioData}}
+{{#each projectData}}
 {{#ifCond category "Tutorial"}}
 {{else}}
-<li style="z-index:calc({{../portfolioData.length}} - {{@index}} + 1)" id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
+<li style="z-index:calc({{../projectData.length}} - {{@index}} + 1)" id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
     <div class = "flipper">
         <div class = "front">{{> cardFront}}</div>
         <div class = "back">{{> cardBack}}</div>
@@ -302,7 +315,7 @@ function displayContent() {
     // compile the template
     const template = Handlebars.compile(projects.concat(skills));
     const mainContent = document.getElementById('main-content');
-    const templatedLayout = template({ portfolioData, skillData });
+    const templatedLayout = template({ projectData, skillData });
     mainContent.innerHTML = templatedLayout;
 }
 
