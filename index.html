@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
 
     <title>Varun Singh’s Coding Portfolio</title>
@@ -28,18 +28,20 @@
 
 <body>
     <div id="container">
-        <header>
-            <h1>Varun Singh</h1>
+        <header class="row">
+            <div class = "col-sm-3"></div>
+            <h1 class = "col-sm-6">Varun Singh</h1>
+            <nav class = "col-sm-3">
+                <a href = "#Projects">Projects</a>
+                <a href = "#Skills">Skills</a>
+            </nav>
         </header>
         <section class="col-sm-6 inner" id="about">   
             <p>I am a web, software and mobile app developer living in Pennsylvania. I have experience in a variety of technology ranging from HTML to Flutter to .NET development. </p>
         </section>
         <section class = "row page-content">
-            <nav class = "col-sm-2">
-                <!-- <a href = "/Coding">Coding</a>
-                <a href = "/Art">Art</a> -->
-            </nav>
-            <section id="main-content" class="col-sm-8"></section>
+            <div class="col-sm-2"></div>
+            <div id="main-content" class="col-sm-8"></div>
         </section>
         <footer class = "col-sm-12 inner">
             <p style="color: black">&copy; 2017-2020 Varun Singh</p>

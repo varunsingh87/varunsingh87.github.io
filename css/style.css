@@ -1,3 +1,27 @@
+.row {
+	margin: 0;
+}
+
+nav {
+	display: inline-flex;
+	justify-content: center;
+}
+
+nav > * {
+	margin: 0 1em;
+	font-size: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+	nav > * {
+		font-size: 1.5em;
+	}
+}
+
+nav > a:hover {
+	text-decoration: none;
+}
+
 .front p {
 	color: crimson;
 }

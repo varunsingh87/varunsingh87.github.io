@@ -28,10 +28,10 @@ let projectData = [
     {
         name: "Chatfish",
         category: "Personal",
-        status: "Planning",
+        status: "Current",
         borumProduct: true,
         link: "http://chat.bforborum.com",
-        img: "https://raw.githubusercontent.com/Borumer/Chatfish/master/images/icon.png",
+        img: "https://raw.githubusercontent.com/BorumInc/Chatfish-WindowsApp/master/Chatfish.Interface/Images/icon.ico",
         softwareDevelopmentTools: {
             languages: ['C#', 'XAML'],
             frameworks: ['.NET', 'WPF'],
@@ -288,7 +288,7 @@ function toggleHover(el) {
     el.classList.toggle('hover');
 }
 
-const projects = `<h2>Projects</h2>
+const projects = `<div id="Projects"><h2>Projects</h2>
 <ul class = 'd-flex p-2 flex-wrap project-list'>
 {{#each projectData}}
 {{#ifCond category "Tutorial"}}
@@ -302,14 +302,14 @@ const projects = `<h2>Projects</h2>
 </li>
 {{/ifCond}}
 {{/each}}
-</ul>`;
+</ul></div>`;
 
-const skills = `<h2>Skills</h2>
+const skills = `<div id="Skills"><h2>Skills</h2>
 <ul class = 'skills-stack'>
 {{#each skillData}}
 <li id="skill-{{@index}}">{{this}}</li>
 {{/each}}
-</ul>`;
+</ul></div>`;
 
 function displayContent() {
     // compile the template
