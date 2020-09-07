@@ -1,5 +1,18 @@
 let projectData = [
     {
+        name: "The Lower Moreland Spectator",
+        category: "Personal",
+        status: "Current",
+        borumProduct: false,
+        link: "the-lower-moreland-spectator.vercel.app",
+        softwareDevelopmentTools: {
+            languages: ['JavaScript', 'CSS'],
+            libraries: ['ReactJS'],
+            frameworks: ['NextJS'],
+            runtime: 'NodeJS'
+        }
+    },
+    {
         name: "North Star",
         category: "Hackathon",
         status: "Finishing",
@@ -15,7 +28,7 @@ let projectData = [
     {
         name: "Borum Jot",
         category: "Personal",
-        status: "Planning",
+        status: "Current",
         borumProduct: true,
         link: "http://jot.bforborum.com",
         img: "http://jot.bforborum.com/images/icon.png",
@@ -73,7 +86,7 @@ let projectData = [
             libraries: ['csvtojson', 'axios'],
             apis: ['USDA API'],
             frameworks: ['Express'],
-            serverEnvironment: 'NodeJS'
+            runtime: 'NodeJS'
         },
         years: "2020",
     },
@@ -136,7 +149,7 @@ let projectData = [
         img: "http://restaurants.bforborum.com/favicon.ico",
         softwareDevelopmentTools: {
             languages: ['JavaScript'],
-            libraries: ['React']
+            libraries: ['ReactJS']
         }
     },
     {
