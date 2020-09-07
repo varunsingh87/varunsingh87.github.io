@@ -4,7 +4,7 @@ let projectData = [
         category: "Personal",
         status: "Current",
         borumProduct: false,
-        link: "the-lower-moreland-spectator.vercel.app",
+        link: "https://the-lower-moreland-spectator.vercel.app",
         softwareDevelopmentTools: {
             languages: ['JavaScript', 'CSS'],
             libraries: ['ReactJS'],
@@ -226,6 +226,11 @@ let projectData = [
         years: "2018-2020"
     },
 ];
+fetch('https://borumer.github.io/data/projectdata.json').then(response => {
+    if (response.readyState == 4 && response.status == 200) {
+        projectData = JSON.parse(response.text());
+    }
+});
 
 projectData = projectData.filter(el => el.category !== "Tutorial");
 
