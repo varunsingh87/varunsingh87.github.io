@@ -22,6 +22,36 @@
             "years": "2020-Present"
         },
         {
+            "name": "Borum Jot API",
+            "category": "Personal",
+            "status": "Current",
+            "borumProduct": true,
+            "link": "https://api.jot.bforborum.com",
+            "softwareDevelopmentTools": {
+                "languages": ["PHP", "SQL", "JSON"]
+            },
+            "years": "2020"
+        },
+        {
+            "name": "Borum Jot Android App",
+            "category": "Personal",
+            "status": "Current",
+            "borumProduct": true,
+            "link": "https://jot.bforborum.com",
+            "img": "https://jot.bforborum.com/images/icon.png",
+            "softwareDevelopmentTools": {
+                "languages": [
+                    "Java",
+                    "XML",
+                    "PHP"
+                ],
+                "apis": [
+                    "Android"
+                ]
+            },
+            "years": "2020"
+        },
+        {
             "name": "North Star",
             "category": "Hackathon",
             "status": "Finishing",
@@ -34,25 +64,6 @@
                 ],
                 "apis": [
                     "Flutter"
-                ]
-            },
-            "years": "2020"
-        },
-        {
-            "name": "Borum Jot",
-            "category": "Personal",
-            "status": "Current",
-            "borumProduct": true,
-            "link": "http://jot.bforborum.com",
-            "img": "http://jot.bforborum.com/images/icon.png",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "Java",
-                    "XML",
-                    "PHP"
-                ],
-                "apis": [
-                    "Android"
                 ]
             },
             "years": "2020"
