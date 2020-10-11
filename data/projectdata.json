@@ -20,19 +20,18 @@
                 "runtime": "NodeJS"
             },
             "years": "2020-Present"
-        },
-        {
+        }, {
             "name": "Borum Jot API",
             "category": "Personal",
             "status": "Current",
             "borumProduct": true,
             "link": "https://api.jot.bforborum.com",
+            "img": "https://jot.bforborum.com/images/icon.png",
             "softwareDevelopmentTools": {
                 "languages": ["PHP", "SQL", "JSON"]
             },
             "years": "2020"
-        },
-        {
+        }, {
             "name": "Borum Jot Android App",
             "category": "Personal",
             "status": "Current",
@@ -50,8 +49,19 @@
                 ]
             },
             "years": "2020"
-        },
-        {
+        }, {
+            "name": "Borum Developer Documentation",
+            "category": "Personal",
+            "status": "Current",
+            "borumProduct": true,
+            "link": "https://developer.bforborum.com",
+            "img": "http://cdn.bforborum.com/images/icon.png",
+            "softwareDevelopmentTools": {
+                "languages": ["JavaScript"],
+                "frameworks": ["NextJS"],
+                "libraries": ["ReactJS"]
+            }
+        }, {
             "name": "North Star",
             "category": "Hackathon",
             "status": "Finishing",
