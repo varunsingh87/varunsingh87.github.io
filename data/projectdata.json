@@ -81,7 +81,7 @@
         {
             "name": "Chatfish",
             "category": "Personal",
-            "status": "Current",
+            "status": "Tutorial",
             "borumProduct": true,
             "link": "http://chat.bforborum.com",
             "img": "https://raw.githubusercontent.com/BorumInc/Chatfish-WindowsApp/master/Chatfish.Interface/Images/icon.ico",
