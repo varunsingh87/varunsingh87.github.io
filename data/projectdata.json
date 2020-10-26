@@ -174,38 +174,6 @@
             "years": "2020"
         },
         {
-            "name": "Borum Paint",
-            "category": "Personal",
-            "status": "Ended",
-            "borumProduct": true,
-            "link": "http://paint.bforborum.com",
-            "img": "https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "Processing",
-                    "JavaScript",
-                    "HTML"
-                ],
-                "library": [
-                    "p5.js"
-                ]
-            }
-        },
-        {
-            "name": "Library System",
-            "category": "Personal",
-            "status": "Ended",
-            "borumProduct": false,
-            "link": "https://library-management-system.glitch.me/",
-            "img": "https://cdn.glitch.com/65f2c798-3d83-4eea-9b3c-130c150e928b%2Flmsicon.png?v=1594941302927",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "C#"
-                ]
-            },
-            "years": "2019"
-        },
-        {
             "name": "Frequency Analysis Simulator",
             "category": "Personal",
             "status": "Ended",
@@ -289,6 +257,38 @@
                     "CSS"
                 ]
             }
+        },
+        {
+            "name": "Borum Paint",
+            "category": "Personal",
+            "status": "Ended",
+            "borumProduct": true,
+            "link": "http://paint.bforborum.com",
+            "img": "https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png",
+            "softwareDevelopmentTools": {
+                "languages": [
+                    "Processing",
+                    "JavaScript",
+                    "HTML"
+                ],
+                "library": [
+                    "p5.js"
+                ]
+            }
+        },
+        {
+            "name": "Library System",
+            "category": "Personal",
+            "status": "Ended",
+            "borumProduct": false,
+            "link": "https://library-management-system.glitch.me/",
+            "img": "https://cdn.glitch.com/65f2c798-3d83-4eea-9b3c-130c150e928b%2Flmsicon.png?v=1594941302927",
+            "softwareDevelopmentTools": {
+                "languages": [
+                    "C#"
+                ]
+            },
+            "years": "2019"
         },
         {
             "name": "Text Adventure",

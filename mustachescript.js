@@ -120,7 +120,7 @@ async function displayContent() {
     const template = Handlebars.compile(projectsContainer.concat(skillsContainer));
     const mainContent = document.getElementById('main-content');
     const templatedLayout = template({ 
-        projectData: (await getProjectData()).slice(0, 13), 
+        projectData: (await getProjectData()).slice(0, 10), 
         skillData: await getSkillData() 
     });
     mainContent.innerHTML = templatedLayout;
