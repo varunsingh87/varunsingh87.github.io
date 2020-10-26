@@ -26,7 +26,7 @@
             "status": "Current",
             "borumProduct": true,
             "link": "https://api.jot.bforborum.com",
-            "img": "https://jot.bforborum.com/images/icon.png",
+            "img": "https://jot.bforborum.com/images/favicon/icon.png",
             "softwareDevelopmentTools": {
                 "languages": ["PHP", "SQL", "JSON"]
             },
@@ -37,7 +37,7 @@
             "status": "Current",
             "borumProduct": true,
             "link": "https://jot.bforborum.com",
-            "img": "https://jot.bforborum.com/images/icon.png",
+            "img": "https://jot.bforborum.com/images/favicon/icon.png",
             "softwareDevelopmentTools": {
                 "languages": [
                     "Java",
