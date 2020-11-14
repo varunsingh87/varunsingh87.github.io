@@ -37,6 +37,10 @@ nav > a:hover {
 	width: 250px;
 }
 
+.project-list {
+	margin-right: 30px;
+}
+
 .project-list li {
 	list-style-type: none;
 	width: 150px;
