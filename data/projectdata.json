@@ -1,29 +1,9 @@
 {
     "projectData": [
         {
-            "name": "The Lower Moreland Spectator",
-            "category": "Personal",
-            "status": "Current",
-            "borumProduct": false,
-            "link": "https://the-lower-moreland-spectator.vercel.app",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "JavaScript",
-                    "CSS"
-                ],
-                "libraries": [
-                    "ReactJS"
-                ],
-                "frameworks": [
-                    "NextJS"
-                ],
-                "runtime": "NodeJS"
-            },
-            "years": "2020-Present"
-        }, {
             "name": "Borum Jot API",
             "category": "Personal",
-            "status": "Current",
+            "status": "Finished",
             "borumProduct": true,
             "link": "https://api.jot.bforborum.com",
             "img": "https://jot.bforborum.com/images/favicon/icon.png",
@@ -34,7 +14,7 @@
         }, {
             "name": "Borum Jot Android App",
             "category": "Personal",
-            "status": "Current",
+            "status": "Finished",
             "borumProduct": true,
             "link": "https://jot.bforborum.com",
             "img": "https://jot.bforborum.com/images/favicon/icon.png",
@@ -52,7 +32,7 @@
         }, {
             "name": "Borum Dev Docs",
             "category": "Personal",
-            "status": "Current",
+            "status": "Finished",
             "borumProduct": true,
             "link": "https://developer.bforborum.com",
             "img": "http://cdn.bforborum.com/images/icon.png",
@@ -64,7 +44,7 @@
         }, {
             "name": "North Star",
             "category": "Hackathon",
-            "status": "Finishing",
+            "status": "Ended",
             "borumProduct": false,
             "link": "https://devpost.com/software/north-star-xio17y",
             "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/173/541/datas/medium.png",
@@ -77,41 +57,6 @@
                 ]
             },
             "years": "2020"
-        },
-        {
-            "name": "Chatfish",
-            "category": "Personal",
-            "status": "Future",
-            "borumProduct": true,
-            "link": "http://chat.bforborum.com",
-            "img": "https://raw.githubusercontent.com/BorumInc/Chatfish-WindowsApp/master/Chatfish.Interface/Images/icon.ico",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "C#",
-                    "XAML"
-                ],
-                "frameworks": [
-                    ".NET",
-                    "WPF"
-                ]
-            }
-        },
-        {
-            "name": "Borum Farms",
-            "category": "Personal",
-            "status": "Future",
-            "borumProduct": true,
-            "link": "https://github.com/Borumer/BorumFarms",
-            "img": "https://raw.githubusercontent.com/Borumer/BorumFarms/master/images/whitelogo.jpg",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "Java"
-                ],
-                "frameworks": [
-                    "Swing"
-                ]
-            },
-            "years": "2020-Present"
         },
         {
             "name": "EcoFriend",
