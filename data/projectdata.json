@@ -181,7 +181,7 @@
             "status": "Ended",
             "borumProduct": true,
             "link": "http://feasts.bforborum.com",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/5/54/Cheese_and_Pepperoni_Pizza_%284825046245%29.jpg",
+            "img": "/images/pizza.jpg",
             "softwareDevelopmentTools": {
                 "languages": [
                     "HTML",

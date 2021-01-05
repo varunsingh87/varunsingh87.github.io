@@ -39,11 +39,6 @@ Array.prototype.unique = function() {
     return a;
 };
 
-
-Handlebars.registerPartial('cardBack', `
-
-`);
-
 Handlebars.registerPartial('cardFront', `
 <p>{{name}}</p>
 {{#if img}}
