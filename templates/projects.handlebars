@@ -1,0 +1,13 @@
+<div id="Projects">
+    <h2>Projects</h2>
+    <ul class='d-flex p-2 flex-wrap project-list'>
+        {{#each projectData}}
+        {{#ifCond category "Tutorial"}}
+        {{else}}
+        <li id="project-{{removeSpaces name}}">
+            {{> cardFront}}
+        </li>
+        {{/ifCond}}
+        {{/each}}
+    </ul>
+</div>

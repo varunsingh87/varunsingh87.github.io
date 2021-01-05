@@ -71,3 +71,14 @@ ul.project-list {
 	text-align: center;
 	margin-top: 10px;
 }
+
+.social-media-container {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+}
+
+.social-media-container a {
+	height: 100px;
+	margin-left: 10px;	
+}
