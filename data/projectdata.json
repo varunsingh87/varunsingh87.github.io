@@ -1,18 +1,40 @@
 {
     "projectData": [
         {
+            "name": "Ambient Noise Remover",
+            "description": "A program that removes ambient noise from an audio file",
+            "category": "Science Fair",
+            "status": "Current",
+            "borumProduct": false,
+            "softwareDevelopmentTools": {
+                "languages": [
+                    "Java"
+                ],
+                "apis": [
+                    "Java Sound API"
+                ]
+            }
+        },
+        {
             "name": "Borum Jot API",
+            "description": "A REST API and the back-end for my Borum Jot apps. It encrypts most data before storing it on a MySQL database",
             "category": "Personal",
             "status": "Finished",
             "borumProduct": true,
             "link": "https://api.jot.bforborum.com",
             "img": "https://jot.bforborum.com/images/favicon/icon.png",
             "softwareDevelopmentTools": {
-                "languages": ["PHP", "SQL", "JSON"]
+                "languages": [
+                    "PHP",
+                    "SQL",
+                    "JSON"
+                ]
             },
             "years": "2020"
-        }, {
+        },
+        {
             "name": "Borum Jot Android App",
+            "description": "My first Android app, which manages a user's notes and tasks in one app",
             "category": "Personal",
             "status": "Finished",
             "borumProduct": true,
@@ -29,19 +51,28 @@
                 ]
             },
             "years": "2020"
-        }, {
+        },
+        {
             "name": "Borum Dev Docs",
+            "description": "API documentation for Borum products for developers",
             "category": "Personal",
-            "status": "Finished",
+            "status": "Continuous",
             "borumProduct": true,
             "link": "https://developer.bforborum.com",
             "img": "http://cdn.bforborum.com/images/icon.png",
             "softwareDevelopmentTools": {
-                "languages": ["JavaScript"],
-                "frameworks": ["NextJS"],
-                "libraries": ["ReactJS"]
+                "languages": [
+                    "JavaScript"
+                ],
+                "frameworks": [
+                    "NextJS"
+                ],
+                "libraries": [
+                    "ReactJS"
+                ]
             }
-        }, {
+        },
+        {
             "name": "North Star",
             "category": "Hackathon",
             "status": "Ended",
@@ -76,6 +107,7 @@
         },
         {
             "name": "FarmaKarma",
+            "description": "An app that rates farmers on their environmental practices",
             "category": "Hackathon",
             "status": "Ended",
             "link": "https://devpost.com/software/FarmaKarma",
@@ -102,6 +134,7 @@
         },
         {
             "name": "Flytrap",
+            "description": "A repository for storing and sharing audio files",
             "category": "Personal",
             "status": "Ended",
             "borumProduct": true,
@@ -120,7 +153,8 @@
         },
         {
             "name": "Frequency Analysis Simulator",
-            "category": "Personal",
+            "description": "A program that decrypts basic ciphers using frequency analysis",
+            "category": "Science Fair",
             "status": "Ended",
             "borumProduct": false,
             "link": "https://borumer.github.io/Frequency-Analysis-Simulator",
@@ -139,23 +173,8 @@
             "years": "2019-2020"
         },
         {
-            "name": "Borum Restaurants",
-            "category": "Tutorial",
-            "status": "Ended",
-            "borumProduct": true,
-            "link": "http://restaurants.bforborum.com",
-            "img": "http://restaurants.bforborum.com/favicon.ico",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "JavaScript"
-                ],
-                "libraries": [
-                    "ReactJS"
-                ]
-            }
-        },
-        {
             "name": "Borum Feasts",
+            "description": "A website for ordering food ",
             "category": "Personal",
             "status": "Ended",
             "borumProduct": true,
@@ -166,40 +185,6 @@
                     "HTML",
                     "CSS",
                     "JavaScript"
-                ]
-            }
-        },
-        {
-            "name": "Supreme Guacamole",
-            "category": "Tutorial",
-            "status": "Ended",
-            "borumProduct": false,
-            "link": "https://borumer.github.io/supreme-guacamole/",
-            "img": "https://borumer.github.io/supreme-guacamole/images/icon.ico",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "HTML",
-                    "Java",
-                    "JavaScript",
-                    "Processing"
-                ],
-                "libraries": [
-                    "Handlebars",
-                    "LoDash"
-                ]
-            }
-        },
-        {
-            "name": "Dasmoto's Arts and Crafts",
-            "category": "Tutorial",
-            "status": "Ended",
-            "borumProduct": false,
-            "link": "https://borumer.github.io/Dasmotos-Arts-and-Crafts/",
-            "img": "https://borumer.github.io/Dasmotos-Arts-and-Crafts/icon.ico",
-            "softwareDevelopmentTools": {
-                "languages": [
-                    "HTML",
-                    "CSS"
                 ]
             }
         },
@@ -248,19 +233,6 @@
                 ]
             },
             "years": "2017-2018"
-        },
-        {
-            "name": "Crystalite",
-            "category": "Tutorial",
-            "status": "Ended",
-            "borumProduct": false,
-            "link": "https://borumer.github.io/Crystalite/"
-        },
-        {
-            "name": "Guessing Game",
-            "category": "Tutorial",
-            "status": "Ended",
-            "borumProduct": false
         },
         {
             "name": "Borum Q&A",
