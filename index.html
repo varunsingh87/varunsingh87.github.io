@@ -28,13 +28,14 @@
 
 <body>
     <div id="container">
-        <header class="row">
-            <div class = "col-sm-3"></div>
-            <h1 class = "col-sm-6">Varun Singh</h1>
-            <nav class = "col-sm-3">
+        <header>
+            <nav class = "row">
                 <a href = "#Projects">Projects</a>
+                <a target = "_blank" href = "https://varuns.hashnode.dev">Blog</a>
                 <a href = "#Skills">Skills</a>
+                <a href = "#Contact">Contact</a>
             </nav>
+            <div class = "row"><h1 class="mx-auto">Varun Singh</h1></div>
         </header>
         <section class="col-sm-6 inner" id="about">   
             <p>I am a web, software and mobile app developer living in Pennsylvania. I have experience in a variety of technology ranging from HTML to Flutter to .NET development. </p>
@@ -42,14 +43,28 @@
         <section class = "row page-content">
             <div id="main-content" class="col-sm-12"></div>
         </section>
+        <section class = "row page-content">
+            <h1 class="mx-auto">Contact Me</h1>
+            <form id="contact-form" class="col-sm-12">
+                <p>
+                    <input type="text" placeholder="Email" />
+                </p>
+                <p>
+                    <input type="text" placeholder="Message" />
+                </p>
+                <p>
+                    <input type="submit" value="Submit" />
+                </p>
+            </form>
+        </section>
         <footer class = "col-sm-12 inner">
             <p style="color: black">&copy; 2017-2020 Varun Singh</p>
         </footer>
     </div>
     <!-- Include Handlebars from a CDN -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="data/projectdata.js"></script>
     <script src="mustachescript.js"></script>
-    <script src="events.js"></script>
 </body>
 
 </html>

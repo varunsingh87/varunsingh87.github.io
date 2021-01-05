@@ -41,6 +41,22 @@ Array.prototype.unique = function() {
 
 
 Handlebars.registerPartial('cardBack', `
+
+`);
+
+Handlebars.registerPartial('cardFront', `
+<p>{{name}}</p>
+{{#if img}}
+<img src = '{{img}}'>
+{{/if}}
+{{#if description}}
+<p class="description">{{description}}</p>
+{{/if}}
+<p>Made with {{softwareDevelopmentTools.languages}}
+{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}<br>
+{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}<br>
+{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}<br>
+</p>
 <p>{{name}} ({{category}})</p>
 {{#if status}}
 <p>Status: {{status}}</p>
@@ -50,20 +66,6 @@ Handlebars.registerPartial('cardBack', `
 <a onclick="event.stopPropagation()" target="_blank" href="{{link}}">View</a>
 {{/if}}
 `);
-
-Handlebars.registerPartial('cardFront', `
-<p>{{name}}</p>
-{{#if img}}
-<img src = '{{img}}'>
-{{/if}}
-`);
-
-Handlebars.registerPartial('backTitle',
-`Made with {{softwareDevelopmentTools.languages}}
-{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}<br>
-{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}<br>
-{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}<br>
-`)
 
 // Removes spaces to make id and class names valid
 Handlebars.registerHelper('removeSpaces', function (value) {
@@ -101,12 +103,8 @@ function getProjectsHtml() {
         {{#each projectData}}
         {{#ifCond category "Tutorial"}}
         {{else}}
-        <li style="z-index:calc({{../projectData.length}} - {{@index}} + 1)" id="project-{{removeSpaces name}}" class = "flip-container" ontouchstart="toggleHover(this)" onclick="toggleHover(this)">
-            <div class = "flipper">
-                <div class = "front">{{> cardFront}}</div>
-                <div class = "back">{{> cardBack}}</div>
-            </div>
-            <p class="tooltip">{{> backTitle}}</p>
+        <li id="project-{{removeSpaces name}}">
+            {{> cardFront}}
         </li>
         {{/ifCond}}
         {{/each}}

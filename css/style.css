@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .row {
 	margin: 0;
 }
@@ -26,102 +30,35 @@ nav > a:hover {
 	color: crimson;
 }
 
-#projects > div {
+ul.project-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-#projects > div.project-type > div {
-	margin: 10px;
-	width: 250px;
-}
-
-.project-list {
-	margin-right: 30px;
+	justify-content: flex-start;
 }
 
 .project-list li {
+	flex: 1 1 40%;
+	text-align: left;
 	list-style-type: none;
-	width: 150px;
-	height: 170px;
 	margin: 1em 2em;
-	padding: 0;
+	padding: 1em;
 	box-sizing: content-box;
 	background-color: white;
-	perspective: 1000px;
 }
 
-.project-list li:not(.show-info) .front p {
-	height: 20px;
-	margin: 0;
-	padding: 0;	
+.project-list .description + * {
+	clear: left;
 }
 
 #container .project-list li img {
 	background-color: white;
 	object-fit: contain;
 	height: 150px;
+	float: left;
 }
 
 #container ul li a {
 	text-decoration: none;
-}
-
-/** https://davidwalsh.name/css-flip */
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-	transform: rotateY(180deg);
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
-	height: 100%;
-	width: 100%;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	-webkit-backface-visibility: hidden; /* Safari */
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-	background-color: black;
-	color: white;
-}
-
-.tooltip {
-	visibility: hidden;
-	opacity: 1;
-	background-color: beige;
-	color: black;
-	padding: 1em;
-	left: 150px;
-	min-width: 200px;
-	top: 0;
-}
-
-.flip-container:hover .tooltip {
-	visibility: visible;
 }
 
 /** Skill Stack */
