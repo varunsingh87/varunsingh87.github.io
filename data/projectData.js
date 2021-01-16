@@ -18,7 +18,7 @@ const projectData = [
 		status: "Finished",
 		borumProduct: true,
 		link: "https://api.jot.bforborum.com",
-		img: "https://jot.bforborum.com/images/favicon/icon.png",
+		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["PHP", "SQL", "JSON"],
 		},
@@ -32,7 +32,7 @@ const projectData = [
 		status: "Finished",
 		borumProduct: true,
 		link: "https://jot.bforborum.com",
-		img: "https://jot.bforborum.com/images/favicon/icon.png",
+		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["Java", "XML", "PHP"],
 			apis: ["Android"],
@@ -46,7 +46,7 @@ const projectData = [
 		status: "Continuous",
 		borumProduct: true,
 		link: "https://developer.bforborum.com",
-		img: "http://cdn.bforborum.com/images/icon.png",
+		img: "./images/borumtech.png",
 		softwareDevelopmentTools: {
 			languages: ["JavaScript"],
 			frameworks: ["NextJS"],
@@ -192,7 +192,7 @@ const projectData = [
 		status: "Ended",
 		borumProduct: true,
 		link: "http://www.bforborum.com",
-		img: "http://cdn.bforborum.com/images/icon.png",
+		img: "./images/borumtech.png",
 		softwareDevelopmentTools: {
 			languages: ["PHP", "SQL", "HTML", "CSS", "JavaScript"],
 			frameworks: ["Bootstrap"],
