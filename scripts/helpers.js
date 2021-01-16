@@ -33,7 +33,7 @@ Handlebars.registerPartial(
 {{#if status}}
 <p>Status: {{status}}</p>
 {{#if borumProduct}}
-<img src='http://cdn.bforborum.com/images/icon.png' style='width:100%; background: none; display:block; height:20px'>
+<img src='./images/borumtech.png' style='width:100%; background: none; display:block; height:20px'>
 {{/if}}
 <a onclick="event.stopPropagation()" target="_blank" href="{{link}}">View</a>
 {{/if}}
