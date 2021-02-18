@@ -2,12 +2,11 @@
     <h2>Projects</h2>
     <ul class='d-flex p-2 flex-wrap project-list'>
         {{#each projectData}}
-        {{#ifCond category "Tutorial"}}
-        {{else}}
+        {{#unless category "Tutorial"}}
         <li id="project-{{removeSpaces name}}">
             {{> cardFront}}
         </li>
-        {{/ifCond}}
+        {{/unless}}
         {{/each}}
     </ul>
 </div>

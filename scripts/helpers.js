@@ -4,13 +4,18 @@ Handlebars.registerHelper("removeSpaces", function (value) {
 });
 
 Handlebars.registerHelper("writeOtherTools", function (name, arr) {
-	if (arr) return `Utilizing the following ${name}: ${arr}`;
+	let arrAsImgs = "";
+	for (let i = 0; i < arr?.length; i++) {
+		arrAsImgs += "<h1>${arr[i]}</h1>";
+	}
+	
+	return arrAsImgs;
 });
 
 Handlebars.registerHelper("ifCond", function (v1, v2, options) {
-	if (v1 === v2) {
+	if (v1 === v2)
 		return options.fn(this);
-	}
+	
 	return options.inverse(this);
 });
 
@@ -24,18 +29,27 @@ Handlebars.registerPartial(
 {{#if description}}
 <p class="description">{{description}}</p>
 {{/if}}
-<p>Made with {{softwareDevelopmentTools.languages}}
-{{writeOtherTools "APIs" softwareDevelopmentTools.apis}}<br>
-{{writeOtherTools "Libraries" softwareDevelopmentTools.libraries}}<br>
-{{writeOtherTools "Frameworks" softwareDevelopmentTools.frameworks}}<br>
-</p>
-<p>{{name}} ({{category}})</p>
+<ul class="skills-stack">
+{{#each softwareDevelopmentTools.languages}}
+<li>{{this}}</li>
+{{/each}}
+{{#each softwareDevelopmentTools.apis}}
+<li>{{this}}</li>
+{{/each}}
+{{#each softwareDevelopmentTools.libraries}}
+<li>{{this}}</li>
+{{/each}}
+{{#each softwareDevelopmentTools.frameworks}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+<p>Category: {{category}}</p>
 {{#if status}}
 <p>Status: {{status}}</p>
 {{#if borumProduct}}
 <img src='./images/borumtech.png' style='width:100%; background: none; display:block; height:20px'>
 {{/if}}
-<a onclick="event.stopPropagation()" target="_blank" href="{{link}}">View</a>
+<a onclick="event.stopPropagation()" target="_blank" href="{{link}}">View Project</a>
 {{/if}}
 `
 );

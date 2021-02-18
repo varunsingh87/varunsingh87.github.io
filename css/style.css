@@ -1,33 +1,126 @@
 html {
 	scroll-behavior: smooth;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .row {
 	margin: 0;
 }
 
-nav {
-	display: inline-flex;
-	justify-content: center;
+header {
+	padding-top: 0;
 }
 
-nav > * {
-	margin: 0 1em;
+nav {
+	justify-content: center;
+	background-color: rgb(0, 0, 155);
+	padding: 1em 0;
+	margin: 0;
+	position: relative;
+	min-height: 100px;
+}
+
+nav * {
 	font-size: 1em;
+	color: white;
+	text-shadow: none;
+	position: relative;
+}
+
+/* Navigation https://uxdesign.cc/the-menu-210bec7ad80c */
+.menu {
+	display: flex;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.line {
+	fill: none;
+	stroke: white;
+	stroke-width: 6;
+	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+		stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.line2 {
+	stroke-dasharray: 60 60;
+	stroke-width: 6;
+}
+.line3 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.opened .line1 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
+.opened .line2 {
+	stroke-dasharray: 1 60;
+	stroke-dashoffset: -30;
+	stroke-width: 6;
+}
+
+.opened .line3 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
+
+.opened + ul {
+	margin-top: 0;
+	height: 100vh;
+}
+
+.menu:not(.opened) + ul {
+	margin-top: -400px;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav a:hover {
+	color: rgb(240, 230, 188);
 }
 
 @media only screen and (min-width: 800px) {
+	.menu {
+		display: none;
+	}
+
 	nav > * {
 		font-size: 1.5em;
 	}
+
+	.menu:not(.opened) + ul {
+		display: flex;
+		flex-direction: row;
+		margin-top: 0;
+	}
 }
 
-nav > a:hover {
+header h1 {
+	margin-top: 30px;
+}
+
+header h1,
+section h2,
+#About p {
+	color: black;
+}
+
+nav a:hover {
 	text-decoration: none;
-}
-
-.front p {
-	color: crimson;
 }
 
 ul.project-list {
@@ -36,14 +129,24 @@ ul.project-list {
 	justify-content: flex-start;
 }
 
-.project-list li {
+.project-list li p:first-of-type {
+	font-weight: bold;
+	text-align: center;
+}
+
+.project-list > li {
 	flex: 1 1 40%;
 	text-align: left;
 	list-style-type: none;
 	margin: 1em 2em;
 	padding: 1em;
 	box-sizing: content-box;
-	background-color: white;
+	background-color: rgba(200, 200, 200, 0.8);
+	color: black;
+}
+
+.project-list > li .skills-stack {
+	margin: 1em 0;
 }
 
 .project-list .description + * {
@@ -51,9 +154,9 @@ ul.project-list {
 }
 
 #container .project-list li img {
-	background-color: white;
 	object-fit: contain;
 	height: 150px;
+	margin-right: 1em;
 	float: left;
 }
 
@@ -80,5 +183,5 @@ ul.project-list {
 
 .social-media-container a {
 	height: 100px;
-	margin-left: 10px;	
+	margin-left: 10px;
 }

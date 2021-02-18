@@ -1,10 +1,11 @@
 const projectData = [
 	{
 		name: "Ambient Noise Remover",
-		description: "A program that removes ambient noise from an audio file",
+		description: "A program that removes ambient noise from an audio file. It uses the Kalman Filter to estimate the noise and the Java Sound API to remove the byte data representing the noise.",
 		category: "Science Fair",
 		status: "Current",
 		borumProduct: false,
+		link: "https://varunsingh.dev/Ambient-Noise-Remover",
 		softwareDevelopmentTools: {
 			languages: ["Java"],
 			apis: ["Java Sound API"],
@@ -25,6 +26,21 @@ const projectData = [
 		years: "2020",
 	},
 	{
+		name: "Borum Jot Web App",
+		description: "The web app for Borum Jot",
+		category: "Personal",
+		status: "Finished",
+		borumProduct: true,
+		link: "https://jot.bforborum.com",
+		img: "./images/borumjot.png",
+		softwareDevelopmentTools: {
+			languages: ["JavaScript", "CSS"],
+			libraries: ["ReactJS"],
+			frameworks: ["NextJS"],
+			apis: ["Borum Jot"]
+		}
+	},
+	{
 		name: "Borum Jot Android App",
 		description:
 			"My first Android app, which manages a user's notes and tasks in one app",
@@ -35,7 +51,7 @@ const projectData = [
 		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["Java", "XML", "PHP"],
-			apis: ["Android"],
+			apis: ["Android", "Borum Jot"],
 		},
 		years: "2020",
 	},
