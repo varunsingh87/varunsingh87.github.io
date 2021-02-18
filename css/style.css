@@ -77,8 +77,11 @@ nav * {
 }
 
 .opened + ul {
-	margin-top: 0;
-	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 70px;
+	height: calc(100vh - 120px);
 }
 
 .menu:not(.opened) + ul {
@@ -98,14 +101,22 @@ nav a:hover {
 		display: none;
 	}
 
-	nav > * {
-		font-size: 1.5em;
+	nav {
+		align-content: center;
 	}
 
-	.menu:not(.opened) + ul {
+	nav > * {
+		font-size: 1.25em;
+	}
+
+	.row .menu + ul {
 		display: flex;
 		flex-direction: row;
 		margin-top: 0;
+	}
+
+	.menu + ul li {
+		margin: 0 1em;
 	}
 }
 
