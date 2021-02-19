@@ -17,6 +17,7 @@ nav {
 	margin: 0;
 	position: relative;
 	min-height: 100px;
+	max-height: 100vh;
 }
 
 nav * {
@@ -145,6 +146,8 @@ ul.project-list {
 }
 
 .project-list > li {
+	display: flex;
+	flex-direction: column;
 	flex: 1 1 40%;
 	text-align: left;
 	list-style-type: none;
@@ -167,7 +170,6 @@ ul.project-list {
 	object-fit: contain;
 	height: 150px;
 	margin-right: 1em;
-	float: left;
 }
 
 #container ul li a {
