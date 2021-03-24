@@ -18,7 +18,7 @@ const projectData = [
 		category: "Personal",
 		status: "Finished",
 		borumProduct: true,
-		link: "https://api.jot.bforborum.com",
+		link: "https://api.jot.borumtech.com",
 		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["PHP", "SQL", "JSON"],
@@ -31,7 +31,7 @@ const projectData = [
 		category: "Personal",
 		status: "Finished",
 		borumProduct: true,
-		link: "https://jot.bforborum.com",
+		link: "https://jot.borumtech.com",
 		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["JavaScript", "CSS"],
@@ -47,7 +47,7 @@ const projectData = [
 		category: "Personal",
 		status: "Finished",
 		borumProduct: true,
-		link: "https://jot.bforborum.com",
+		link: "https://jot.borumtech.com",
 		img: "./images/borumjot.png",
 		softwareDevelopmentTools: {
 			languages: ["Java", "XML", "PHP"],
@@ -61,7 +61,7 @@ const projectData = [
 		category: "Personal",
 		status: "Continuous",
 		borumProduct: true,
-		link: "https://developer.bforborum.com",
+		link: "https://developer.borumtech.com",
 		img: "./images/borumtech.png",
 		softwareDevelopmentTools: {
 			languages: ["JavaScript"],
@@ -124,7 +124,7 @@ const projectData = [
 		category: "Personal",
 		status: "Ended",
 		borumProduct: true,
-		link: "http://audio.bforborum.com",
+		link: "http://audio.borumtech.com",
 		img:
 			"https://raw.githubusercontent.com/Borumer/Flytrap/master/images/icon.png",
 		softwareDevelopmentTools: {
@@ -155,7 +155,7 @@ const projectData = [
 		category: "Personal",
 		status: "Ended",
 		borumProduct: true,
-		link: "http://feasts.bforborum.com",
+		link: "http://feasts.borumtech.com",
 		img: "./images/pizza.png",
 		softwareDevelopmentTools: {
 			languages: ["HTML", "CSS", "JavaScript"],
@@ -167,7 +167,7 @@ const projectData = [
 		category: "Personal",
 		status: "Ended",
 		borumProduct: true,
-		link: "http://paint.bforborum.com",
+		link: "http://paint.borumtech.com",
 		img:
 			"https://raw.githubusercontent.com/Borumer/BorumPaint/master/paint-pallete.png",
 		softwareDevelopmentTools: {
@@ -207,7 +207,7 @@ const projectData = [
 		category: "Personal",
 		status: "Ended",
 		borumProduct: true,
-		link: "http://www.bforborum.com",
+		link: "http://www.borumtech.com",
 		img: "./images/borumtech.png",
 		softwareDevelopmentTools: {
 			languages: ["PHP", "SQL", "HTML", "CSS", "JavaScript"],
