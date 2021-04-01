@@ -1,5 +1,33 @@
 const projectData = [
 	{
+		name: "Product Manager Portfolio Template",
+		description: "A React website for a client on Fiverr",
+		category: "Freelancing",
+		status: "Finished",
+		borumProduct: false,
+		link: "https://fiverr-order-fo3c0543ffc3.vercel.app/",
+		img: "./images/fiverr-order-FO3C0543FFC3.png",
+		softwareDevelopmentTools: {
+			languages: ["HTML", "CSS", "JavaScript"],
+			libraries: ["ReactJS"]
+		},
+		years: "2021"
+	},
+	{
+		name: "PHP-Sleep",
+		description: "A PHP library and Composer package for building REST APIs",
+		category: "Personal",
+		status: "Current",
+		borumProduct: true,
+		link: "https://packagist.org/packages/varuns/php-sleep",
+		img: "https://repository-images.githubusercontent.com/309001182/d7f44180-34eb-11eb-923e-b8165302a76b",
+		softwareDevelopmentTools: {
+			languages: ["PHP", "JSON"],
+			libraries: ["PHPUnit", "GuzzleHTTP"]
+		},
+		years: "2020-2021"
+	},
+	{
 		name: "Ambient Noise Remover",
 		description: "A program that removes ambient noise from an audio file. It uses the Kalman Filter to estimate the noise and the Java Sound API to remove the byte data representing the noise.",
 		category: "Science Fair",
@@ -10,6 +38,7 @@ const projectData = [
 			languages: ["Java"],
 			apis: ["Java Sound API"],
 		},
+		years: "2021"
 	},
 	{
 		name: "Borum Jot API",
@@ -38,7 +67,8 @@ const projectData = [
 			libraries: ["ReactJS"],
 			frameworks: ["NextJS"],
 			apis: ["Borum Jot"]
-		}
+		},
+		years: "2020-2021"
 	},
 	{
 		name: "Borum Jot Android App",
