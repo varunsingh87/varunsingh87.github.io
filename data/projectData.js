@@ -1,5 +1,20 @@
 const projectData = [
 	{
+		name: "Virtual Planner",
+		description: "A virtual agenda book app for students",
+		category: "Hackathon",
+		status: "Finishing",
+		borumProduct: false,
+		link: "https://devpost.com/software/virtual-planner",
+		img: "./images/virtual_planner.jpg",
+		softwareDevelopmentTools: {
+			languages: ["HTML", "CSS", "JavaScript", "Python"],
+			libraries: ["ReactJS"],
+			frameworks: ["Django", "Django Rest Framework"]
+		},
+		years: "2021"
+	},
+	{
 		name: "Product Manager Portfolio Template",
 		description: "A React website for a client on Fiverr",
 		category: "Freelancing",
