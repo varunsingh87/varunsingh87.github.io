@@ -32,8 +32,8 @@ function getSkillsHtml() {
         </ul></div>`;
 }
 
-function getProjectsHtml() {
-	return `<div id="Projects"><h2>Projects</h2>
+function getWorkHtml() {
+	return `<div id="Work"><h2>Work</h2>
         <ul class = 'd-flex p-2 flex-wrap project-list'>
         {{#each projectData}}
         {{#ifCond category "Tutorial"}}
@@ -47,7 +47,7 @@ function getProjectsHtml() {
 }
 
 async function displayContent() {
-	const projectTemplate = Handlebars.templates.projects;
+	const projectTemplate = Handlebars.templates.Work;
 	const projectTemplateLayout = projectTemplate({
 		projectData: projectData.slice(0, 10),
 	});
@@ -59,5 +59,5 @@ async function displayContent() {
 
 	// Compile the template
 	const mainContent = document.getElementById("main-content");
-	mainContent.innerHTML = projectTemplateLayout.concat(skillTemplateLayout);
+	mainContent.innerHTML += projectTemplateLayout.concat(skillTemplateLayout);
 }

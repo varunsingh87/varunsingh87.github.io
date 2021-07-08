@@ -1,5 +1,18 @@
 const projectData = [
 	{
+		name: "TheTop10Sites: Best Dating Sites Page",
+		description: "A webpage describing the best dating sites for a client on Fiverr",
+		category: "Freelancing",
+		status: "Finished",
+		borumProduct: false,
+		link: "https://fiverr-order-fo519162a0ac7.vercel.app/",
+		img: "./images/fiverr-order-FO519162A0AC7.webp",
+		softwareDevelopmentTools: {
+			languages: ["HTML", "CSS", "JavaScript"]
+		},
+		years: "2021"
+	},
+	{
 		name: "Virtual Planner",
 		description: "A virtual agenda book app for students",
 		category: "Hackathon",

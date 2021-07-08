@@ -12,7 +12,8 @@ header {
 
 nav {
 	justify-content: center;
-	background-color: rgb(0, 0, 155);
+	/* background: linear-gradient(to top, #373737, #212121); */
+	background-color: midnightblue;
 	padding: 1em 0;
 	margin: 0;
 	position: relative;
@@ -96,6 +97,126 @@ nav a:hover {
 	color: rgb(240, 230, 188);
 }
 
+header h1 {
+	margin-top: 30px;
+}
+
+header h1,
+.page-content h2,
+.page-content h3,
+#About p {
+	color: black;
+	text-align: center;
+	font-weight: normal;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+ul.project-list {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project-list li .project-info {
+	width: 60%;
+}
+
+.project-list li .project-info > *:first-child {
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+}
+
+.project-list li .subheading {
+	font-size: 1.5em;
+}
+
+.project-list li .description {
+
+}
+
+.project-list > li {
+	display: flex;
+	text-align: left;
+	list-style-type: none;
+	margin: 1em 2em;
+	padding: 1em;
+	box-sizing: content-box;
+	color: black;
+	flex-direction: column;
+	width: 100%;
+}
+
+.project-list li .project-links {
+	width: 35%;
+}
+
+.project-list li .project-links > * {
+	margin: 1em;
+}
+
+.project-list > li .skills-stack {
+	margin: 1em 0;
+}
+
+.project-list .description + * {
+	clear: left;
+}
+
+.project-list .project-thumbnail {
+	object-fit: contain;
+	margin-right: 1em;
+	width: 30%;
+	height: auto;
+}
+
+.project-list .project-thumbnail ~ * {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#container ul li a {
+	text-decoration: none;
+}
+
+.project-list .view-project {
+	padding: 1em;
+	color: black;
+	display: inline-block;
+	font-size: 1.2rem;
+	border: 1px solid black;
+}
+
+.project-list .view-project:hover {
+	background-color: midnightblue;
+	color: white;
+}
+
+/** Skill Stack */
+
+.skills-stack li {
+	list-style-type: none;
+	display: inline-block;
+	background-color: beige;
+	padding: 1em;
+	text-align: center;
+	margin: 10px 5px 0 5px;
+}
+
+.social-media-container {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+}
+
+.social-media-container a {
+	height: 100px;
+	margin-left: 10px;
+}
+
 @media only screen and (min-width: 800px) {
 	.menu {
 		display: none;
@@ -118,82 +239,8 @@ nav a:hover {
 	.menu + ul li {
 		margin: 0 1em;
 	}
-}
 
-header h1 {
-	margin-top: 30px;
-}
-
-header h1,
-section h2,
-#About p {
-	color: black;
-}
-
-nav a:hover {
-	text-decoration: none;
-}
-
-ul.project-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
-
-.project-list li p:first-of-type {
-	font-weight: bold;
-	text-align: center;
-}
-
-.project-list > li {
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 40%;
-	text-align: left;
-	list-style-type: none;
-	margin: 1em 2em;
-	padding: 1em;
-	box-sizing: content-box;
-	background-color: rgba(200, 200, 200, 0.8);
-	color: black;
-}
-
-.project-list > li .skills-stack {
-	margin: 1em 0;
-}
-
-.project-list .description + * {
-	clear: left;
-}
-
-#container .project-list li img {
-	object-fit: contain;
-	height: 150px;
-	margin-right: 1em;
-}
-
-#container ul li a {
-	text-decoration: none;
-}
-
-/** Skill Stack */
-
-.skills-stack li {
-	list-style-type: none;
-	display: inline-block;
-	background-color: beige;
-	padding: 1em;
-	text-align: center;
-	margin-top: 10px;
-}
-
-.social-media-container {
-	display: flex;
-	justify-content: center;
-	font-size: 3em;
-}
-
-.social-media-container a {
-	height: 100px;
-	margin-left: 10px;
+	.project-list > li {
+		flex-direction: row;
+	}
 }

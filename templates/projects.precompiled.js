@@ -1,6 +1,6 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['projects'] = template({"1":function(container,depth0,helpers,partials,data) {
+templates['Work'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -32,7 +32,7 @@ templates['projects'] = template({"1":function(container,depth0,helpers,partials
         return undefined
     };
 
-  return "<div id=\"Projects\"><h2>Projects</h2>\r\n        <ul class = 'd-flex p-2 flex-wrap project-list'>\r\n"
+  return "<div id=\"Work\"><h2>Work</h2>\r\n        <ul class = 'd-flex p-2 flex-wrap project-list'>\r\n"
     + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"projectData") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":3,"column":8},"end":{"line":10,"column":17}}})) != null ? stack1 : "")
     + "        </ul></div>";
 },"usePartial":true,"useData":true});

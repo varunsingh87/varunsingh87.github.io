@@ -3,15 +3,6 @@ Handlebars.registerHelper("removeSpaces", function (value) {
 	return value.replace(" ", "");
 });
 
-Handlebars.registerHelper("writeOtherTools", function (name, arr) {
-	let arrAsImgs = "";
-	for (let i = 0; i < arr?.length; i++) {
-		arrAsImgs += "<h1>${arr[i]}</h1>";
-	}
-	
-	return arrAsImgs;
-});
-
 Handlebars.registerHelper("ifCond", function (v1, v2, options) {
 	if (v1 === v2)
 		return options.fn(this);
