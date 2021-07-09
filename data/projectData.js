@@ -151,7 +151,7 @@ const projectData = [
 		status: "Ended",
 		link: "https://devpost.com/software/enviroshare",
 		img:
-			"https://raw.githubusercontent.com/Borumer/EcoFriend/master/assets/images/icon.png",
+			"../images/ecofriend.png",
 		softwareDevelopmentTools: {
 			languages: ["Dart"],
 			apis: ["Flutter"],
@@ -208,12 +208,12 @@ const projectData = [
 		years: "2019-2020",
 	},
 	{
-		name: "Borum Feasts",
+		name: "order.js",
 		description: "A website for ordering food ",
 		category: "Personal",
 		status: "Ended",
 		borumProduct: true,
-		link: "http://feasts.borumtech.com",
+		link: "https://feasts.borumtech.com",
 		img: "./images/pizza.png",
 		softwareDevelopmentTools: {
 			languages: ["HTML", "CSS", "JavaScript"],

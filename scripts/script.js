@@ -20,7 +20,9 @@ class Project extends HTMLLIElement {
         projectInfoContainer.className = "project-info";
 
         projectInfoContainer.appendChild(this.displayName());
-        projectInfoContainer.appendChild(this.displayCategoryAndTime());
+
+        if (this.hasAttribute('category'))
+            projectInfoContainer.appendChild(this.displayCategoryAndTime());
 
         if (this.hasAttribute('description')) {
             const description = document.createElement('p');
@@ -54,6 +56,15 @@ class Project extends HTMLLIElement {
             projectLinkContainer.appendChild(viewOnGitHub);
         }
 
+        if (this.hasAttribute('tryitout')) {
+            const tryItOut = document.createElement('a');
+            tryItOut.href = this.getAttribute('tryitout');
+            tryItOut.target = "_blank";
+            tryItOut.className = "view-project";
+            tryItOut.textContent = "Try It Out";
+            projectLinkContainer.appendChild(tryItOut);
+        }
+
         this.appendChild(projectInfoContainer);
         this.appendChild(projectLinkContainer);
     }
@@ -76,6 +87,7 @@ class Project extends HTMLLIElement {
         const viewProject = document.createElement('a');
         viewProject.onclick = e => e.stopPropagation();
         viewProject.href = this.getAttribute('link');
+        viewProject.target = viewProject.href.includes('https://varunsingh.dev') ? "_self" : "_blank";
         viewProject.textContent = "Learn More";
         return viewProject;
     }

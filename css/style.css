@@ -103,8 +103,7 @@ header h1 {
 
 header h1,
 .page-content h2,
-.page-content h3,
-#About p {
+.page-content h3, p {
 	color: black;
 	text-align: center;
 	font-weight: normal;
@@ -134,7 +133,7 @@ ul.project-list {
 }
 
 .project-list li .description {
-
+	text-align: left;
 }
 
 .project-list > li {
