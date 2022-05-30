@@ -63,185 +63,230 @@
 				</ul>
 			</nav>
 			<div class="row">
-				<h1 class="mx-auto">Varun Singh</h1>
+				<div class="inner">
+					<h1 class="mx-auto">Hi, I'm Varun. Nice to meet you.</h1>
+					<p>
+						Since beginning my journey 6 years ago, I have built mobile applications, websites, APIs, open-source, and scientific applications. I build services for clients and have worked on projects for startups, hackathons, and my own startup, Borum Tech. I am a self-taught developer with a passion for learning and problem-solving.
+					</p>
+
+				</div>
 			</div>
 		</header>
-		<section class="col-sm-6 inner" id="About">
-			<p>
-				I am a web, software and mobile app developer living in
-				Pennsylvania. I have experience in a variety of technology
-				ranging from HTML to Flutter to .NET development.
-			</p>
-			<p>I build software that fights Big Tech</p>
-		</section>
-		<main class="row page-content">
-			<div id="main-content" class="col-sm-12">
-				<div id="Work">
-					<h2>Work</h2>
-					<ul class="d-flex p-2 project-list">
-						<li is="software-project" 
-							name="Ambient Noise Remover"
-							description="A program that removes ambient noise from an audio file. It uses the Kalman Filter to estimate the noise and the Java Sound API to remove the byte data representing the noise."
-							category="Science Fair"
-							link="https://varunsingh.dev/Ambient-Noise-Remover"
-							img="./images/Ambient-Noise-Remover-logo.png"
-							tools="Java;Java Sound API"
-							years="January 2021 - Present"
-							github="varunsingh87/Ambient-Noise-Remover"></li>
-
-						<!-- <li is="software-project"
-							name="Virtual Planner"
-							description="A virtual agenda book SaaS product for students"
-							category="Los Altos Hack Hackathon"
-							link="https://devpost.com/software/virtual-planner"
-							img="./images/virtual_planner.jpg"
-							tools="HTML;CSS;JavaScript;Python;ReactJS;Django;Django Rest Framework"
-							years="April 2021"
-							github="varunsingh87/virtual-planner-web"></li> -->
-						
-						<li is="software-project"
-							name="North Star"
-							description="An app that helps runaway slaves efficiently get to safehouses in the underground railroad and helps safehouse owners manage the visitors to their safehouse"
-							category="ByteHacks Hackathon"
-							link="https://devpost.com/software/north-star-xio17y"
-							img="./images/north-star.png"
-							tools="Dart;Flutter"
-							years="July 2020 - August 2020"
-							github="varunsingh87/North-Star"></li>
-
-						<li is="software-project"
-							name="EcoFriend"
-							description="A social network for people to share environmental acts they've done and get awarded for doing so"
-							category="EarthxHack Hackathon"
-							link="https://devpost.com/software/enviroshare"
-							img="./images/ecofriend.png"
-							tools="Dart;Flutter"
-							years="April 2020"
-							github="varunsingh87/EcoFriend"></li>
-
-						<li is="software-project"
-							name="FarmaKarma"
-							description="An app that rates farmers on their environmental practices"
-							category="Hack the Earth Hackathon"
-							link="https://devpost.com/software/farmakarma"
-							img="./images/farmakarma.jpg"
-							tools="Axios;CSS;ExpressJS;HTML;JSON;Kaggle;Node;USDA API"
-							years="May 2020"
-							github="varunsingh87/FarmaKarma"
-							tryitout="https://farmakarma.glitch.me"></li>
-
-						<li is="software-project"
-							name="Frequency Analysis Simulator"
-							description="A program that decrypts basic ciphers using frequency analysis"
-							category="Science Fair"
-							link="https://varunsingh.dev/Frequency-Analysis-Simulator"
-							img="./images/frequency-analysis-simulator.ico"
-							tools="Java;WordNet API;extJWNL"
-							years="July 2019 - March 2020"
-							github="varunsingh87/Frequency-Analysis-Simulator"></li>
-					</ul>
+		<main class="page-content">
+			<section class="dev-categories">
+				<input type="radio" id="All" name="categories" value="All" checked />
+				<input type="radio" id="Mobile" name="categories" value="Mobile" />
+				<input type="radio" id="Web" name="categories" value="Web" />
+				<input type="radio" id="API" name="categories" value="API" />
+				<input type="radio" id="Open-Source" name="categories" value="Open-Source" />
+				<input type="radio" id="Scientific" name="categories" value="Scientific" />
+				<input type="radio" id="Freelancing" name="categories" value="Freelancing" />
+				<input type="radio" id="Borum" name="categories" value="Borum" />
+				<ol class="filters">
+					<li>
+						<label for="All">All</label>
+					</li>
+					<li>
+						<label for="Web">Web</label>
+					</li>
+					<li>
+						<label for="Mobile">Mobile</label>
+					</li>
+					<li>
+						<label for="API">API</label>
+					</li>
+					<li>
+						<label for="Open-Source">Open-Source</label>
+					</li>
+					<li>
+						<label for="Scientific">Scientific</label>
+					</li>
+					<li>
+						<label for="Freelancing">Freelancing</label>
+					</li>
+					<li>
+						<label for="Borum">Borum</label>
+					</li>
+				</ol>
+				
+				<div id="main-content" class="col-sm-12">
+					<div id="Work">
+						<h2>Work</h2>
+						<ul class="d-flex p-2 project-list">
+							<li is="software-project" 
+								name="Ambient Noise Remover"
+								description="A program that removes ambient noise from an audio file. It uses the Kalman Filter to estimate the noise and the Java Sound API to remove the byte data representing the noise."
+								category="Science Fair"
+								link="https://varunsingh.dev/Ambient-Noise-Remover"
+								img="./images/Ambient-Noise-Remover-logo.png"
+								tools="Java;Java Sound API"
+								years="January 2021 - Present"
+								github="varunsingh87/Ambient-Noise-Remover"></li>
+	
+							<!-- <li is="software-project"
+								name="Virtual Planner"
+								description="A virtual agenda book SaaS product for students"
+								category="Los Altos Hack Hackathon"
+								link="https://devpost.com/software/virtual-planner"
+								img="./images/virtual_planner.jpg"
+								tools="HTML;CSS;JavaScript;Python;ReactJS;Django;Django Rest Framework"
+								years="April 2021"
+								github="varunsingh87/virtual-planner-web"></li> -->
+							
+							<!-- <li is="software-project"
+								data-category="Mobile"
+								name="North Star"
+								description="An app that helps runaway slaves efficiently get to safehouses in the underground railroad and helps safehouse owners manage the visitors to their safehouse"
+								category="ByteHacks Hackathon"
+								link="https://devpost.com/software/north-star-xio17y"
+								img="./images/north-star.png"
+								tools="Dart;Flutter"
+								years="July 2020 - August 2020"
+								github="varunsingh87/North-Star"></li> -->
+	
+							<!-- <li is="software-project"
+								data-category="Mobile"
+								name="EcoFriend"
+								description="A social network for people to share environmental acts they've done and get awarded for doing so"
+								category="EarthxHack Hackathon"
+								link="https://devpost.com/software/enviroshare"
+								img="./images/ecofriend.png"
+								tools="Dart;Flutter"
+								years="April 2020"
+								github="varunsingh87/EcoFriend"></li> -->
+	
+							<!-- <li is="software-project"
+								data-category="Web"
+								name="FarmaKarma"
+								description="An app that rates farmers on their environmental practices"
+								category="Hack the Earth Hackathon"
+								link="https://devpost.com/software/farmakarma"
+								img="./images/farmakarma.jpg"
+								tools="Axios;CSS;ExpressJS;HTML;JSON;Kaggle;Node;USDA API"
+								years="May 2020"
+								github="varunsingh87/FarmaKarma"
+								tryitout="https://farmakarma.glitch.me"></li> -->
+	
+							<li is="software-project"
+								data-category="Scientific"
+								name="Frequency Analysis Simulator"
+								description="A program that decrypts basic ciphers using frequency analysis"
+								category="Science Fair"
+								link="https://varunsingh.dev/Frequency-Analysis-Simulator"
+								img="./images/frequency-analysis-simulator.ico"
+								tools="Java;WordNet API;extJWNL"
+								years="July 2019 - March 2020"
+								github="varunsingh87/Frequency-Analysis-Simulator"></li>
+							<li is="software-project"
+								data-category="Borum Web"
+								name="Flytrap for Web"
+								description="A SaaS product for storing and sharing audio files."
+								link="https://varunsingh.dev/Flytrap-Web"
+								img="./images/flytrap.png"
+								tools="PHP;HTML;CSS;JavaScript"
+								years="February 2020 - June 2020"
+								github="varunsingh87/Flytrap-Web"
+								tryitout="https://audio.borumtech.com"></li>
+							
+							<li is="software-project"
+								data-category="Borum API Open-Source"
+								name="Flytrap API"
+								description="REST API for Flytrap. I rewrote the front-end and back-end to use the REST API"
+								link="https://varunsingh.dev/Flytrap-API"
+								img="./images/flytrap.png"
+								tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel"
+								years="March 2021 - June 2021"
+								github="varunsingh87/Flytrap-API"
+								tryitout="https://developer.borumtech.com/Flytrap/Documentation/v1/Overview"></li>
+	
+							<li is="software-project"
+								data-category="Borum API"
+								name="PHP Sleep"
+								description="A lightweight PHP library for building REST APIs"
+								link="https://varunsingh.dev/PHP-Sleep"
+								img="./images/php-sleep.png"
+								tools="PHP;MySQL;JSON;GuzzleHTTP;PHPUnit"
+								years="October 2020 - Present"
+								github="varunsingh87/php-sleep"
+								tryitout="https://packagist.org/packages/varuns/php-sleep"></li>
+							<li is="software-project"
+								data-category="Borum Web"
+								name="Borum Jot for Web"
+								description="An encrypted note and task management web app"
+								link="https://devpost.com/software/borum-jot"
+								img="./images/borumjot.avif"
+								tools="JavaScript;React;NextJS;CSS"
+								years="November 2020 - January 2021"
+								tryitout="https://jot.borumtech.com"
+								></li>
+							<li is="software-project"
+								data-category="Borum API"
+								name="Borum Jot API"
+								description="A REST API and the back-end for my Borum Jot apps. It encrypts user data before storing it on a MySQL database"
+								link="https://devpost.com/software/borum-jot"
+								img="./images/borumjot.png"
+								tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel"
+								years="September 2020 - December 2020"
+								tryitout="https://developer.borumtech.com/Jot/Documentation/v1/Overview"></li>
+							<li is="software-project"
+								data-category="Borum Mobile"
+								name="Borum Jot Android"
+								description="An encrypted note and task management Android app"
+								link="https://devpost.com/software/borum-jot"
+								img="./images/borumjot.png"
+								tools="Android SDK;XML"
+								years="August 2020 - November 2020"
+								tryitout="https://play.google.com/store/apps/details?id=com.boruminc.borumjot.android"></li>
+							<li is="software-project"
+								data-category="Borum Web"
+								name="Borum Dev Docs"
+								description="API documentation for Borum products' REST APIs and Borum open-source libraries"
+								link="https://varunsingh.dev/Borum-Developer-Docs"
+								img="./images/borumtech.png"
+								tools="JavaScript;React;NextJS;CSS"
+								years="September 2020 - Present"
+								github="varunsingh87/Borum-Dev-Documentation"
+								tryitout="https://developer.borumtech.com"></li>
+							<li is="software-project"
+								data-category="Borum Web"
+								name="Borum Forum"
+								description="A Q&A site"
+								link="https://varunsingh.dev/BorumForum-Web"
+								img="./images/borumtech.png"
+								tools="PHP;HTML;CSS;JavaScript"
+								years="November 2018 - November 2019"
+								github="varunsingh87/BorumForum-Web"
+								tryitout="https://forum.borumtech.com"></li>
+							<li is="software-project"
+								data-category="Borum API"
+								category="Borum"
+								name="Borum Forum API"
+								description="A REST API for Borum accounts and the Borum Forum"
+								link="https://varunsingh.dev/BorumForum-API"
+								img="./images/borumtech.png"
+								tools="PHP;HTML;CSS;JavaScript"
+								years="October 2020 - Present"
+								github="varunsingh87/BorumForum-API"
+								tryitout="https://developer.borumtech.com/Forum"></li>
+							<li is="software-project"
+								data-category="Web Freelancing"
+								name="TheTop10Sites: Best Dating Sites Page"
+								img="./images/fiverr-order-FO519162A0AC7.webp"
+								tools="HTML;CSS;JavaScript"
+								years="July 2021"
+								tryitout="https://fiverr-order-fo519162a0ac7.vercel.app/"></li>
+							<li is="software-project"
+								data-category="Web Freelancing"
+								name="Product Manager Portfolio Template"
+								description="Template for a product manager's portfolio website"
+								img="./images/fiverr-order-FO3C0543FFC3.png"
+								tools="JavaScript;React;CSS"
+								years="March 2021"
+								tryitout="https://fiverr-order-fo3c0543ffc3.vercel.app"></li>
+						</ul>
+					</div>
 				</div>
-				<article class="inner" id="Borum-Introduction">
-					<h3>Borum</h3>
-					<p>Borum is an ecosystem of products I created that allows user to sign in using one Borum account, much like an iCloud account, Microsoft account, or Proton account. All current and future Borum products can be found on the <a href="https://store.borumtech.com" target="_blank" rel="noreferrer">BorStore</a></p>
-				</article>
-				<div id="Borum-Projects">
-					<ul class="d-flex p-2 project-list">
-						<li is="software-project"
-							name="Flytrap for Web"
-							description="A SaaS product for storing and sharing audio files."
-							link="https://varunsingh.dev/Flytrap-Web"
-							img="./images/flytrap.png"
-							tools="PHP;HTML;CSS;JavaScript"
-							years="February 2020 - June 2020"
-							github="varunsingh87/Flytrap-Web"
-							tryitout="https://audio.borumtech.com"></li>
-						
-						<li is="software-project"
-							name="Flytrap API"
-							description="REST API for Flytrap. I rewrote the front-end and back-end to use the REST API"
-							link="https://varunsingh.dev/Flytrap-API"
-							img="./images/flytrap.png"
-							tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel"
-							years="March 2021 - June 2021"
-							github="varunsingh87/Flytrap-API"
-							tryitout="https://developer.borumtech.com/Flytrap/Documentation/v1/Overview"></li>
-
-						<li is="software-project"
-							name="PHP Sleep"
-							description="A lightweight PHP library for building REST APIs"
-							link="https://varunsingh.dev/PHP-Sleep"
-							img="./images/php-sleep.png"
-							tools="PHP;MySQL;JSON;GuzzleHTTP;PHPUnit"
-							years="October 2020 - Present"
-							github="varunsingh87/php-sleep"
-							tryitout="https://packagist.org/packages/varuns/php-sleep"></li>
-						<li is="software-project"
-							name="Borum Jot for Web"
-							description="An encrypted note and task management web app"
-							link="https://devpost.com/software/borum-jot"
-							img="./images/borumjot.png"
-							tools="JavaScript;React;NextJS;CSS"
-							years="November 2020 - January 2021"
-							tryitout="https://jot.borumtech.com"
-							></li>
-						<li is="software-project"
-							name="Borum Jot API"
-							description="A REST API and the back-end for my Borum Jot apps. It encrypts user data before storing it on a MySQL database"
-							link="https://devpost.com/software/borum-jot"
-							img="./images/borumjot.png"
-							tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel"
-							years="September 2020 - December 2020"
-							tryitout="https://developer.borumtech.com/Jot/Documentation/v1/Overview"></li>
-						<li is="software-project"
-							name="Borum Jot Android"
-							description="An encrypted note and task management Android app"
-							link="https://devpost.com/software/borum-jot"
-							img="./images/borumjot.png"
-							tools="Android SDK;XML"
-							years="August 2020 - November 2020"
-							tryitout="https://play.google.com/store/apps/details?id=com.boruminc.borumjot.android"></li>
-						<li is="software-project"
-							name="Borum Dev Docs"
-							description="API documentation for Borum products' REST APIs and Borum open-source libraries"
-							link="https://varunsingh.dev/Borum-Developer-Docs"
-							img="./images/borumtech.png"
-							tools="JavaScript;React;NextJS;CSS"
-							years="September 2020 - Present"
-							github="varunsingh87/Borum-Dev-Documentation"
-							tryitout="https://developer.borumtech.com"></li>
-						<li is="software-project"
-							name="Borum Forum"
-							description="A Q&A site"
-							link="https://varunsingh.dev/BorumForum-Web"
-							img="./images/borumtech.png"
-							tools="PHP;HTML;CSS;JavaScript"
-							years="November 2018 - November 2019"
-							github="varunsingh87/BorumForum-Web"
-							tryitout="https://forum.borumtech.com"></li>
-					</ul>
-				</div>
-				<div id="Freelancing">
-					<h3>Freelancing Orders</h3>
-					<p>I am currently a freelancer on <a target="_blank" rel="noreferrer" href="https://www.fiverr.com/varuns924?up_rollout=true">Fiverr</a>. I create web sites and REST APIs for buyers.</p>
-					
-					<ul class="d-flex p-2 project-list">
-						<li is="software-project"
-							name="TheTop10Sites: Best Dating Sites Page"
-							img="./images/fiverr-order-FO519162A0AC7.webp"
-							tools="HTML;CSS;JavaScript"
-							years="July 2021"
-							tryitout="https://fiverr-order-fo519162a0ac7.vercel.app/"></li>
-						<li is="software-project"
-							name="Product Manager Portfolio Template"
-							description="Template for a product manager's portfolio website"
-							img="./images/fiverr-order-FO3C0543FFC3.png"
-							tools="JavaScript;React;CSS"
-							years="March 2021"
-							tryitout="https://fiverr-order-fo3c0543ffc3.vercel.app"></li>
-					</ul>
-				</div>
-			</div>
+			</section>
 			<div id="Skills" class="inner">
 				<h3>Skills</h3>
 				<ul class="skills-stack">
@@ -253,8 +298,6 @@
 					<li>React</li>
 					<li>NextJS</li>
 					<li>Java</li>
-					<li>Java Sound API</li>
-					<li>Java Swing</li>
 					<li>PHP</li>
 					<li>Git</li>
 					<li>GitHub</li>
@@ -262,9 +305,11 @@
 					<li>SQL</li>
 					<li>Responsive Design</li>
 					<li>Vercel</li>
+					<li>Netlify</li>
 					<li>Flutter</li>
 				</ul>
 			</div>
+
 		</main>
 		<section class="row page-content">
 			<h1 class="mx-auto">Contact Me</h1>

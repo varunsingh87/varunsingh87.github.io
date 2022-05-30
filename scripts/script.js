@@ -21,8 +21,8 @@ class Project extends HTMLLIElement {
 
         projectInfoContainer.appendChild(this.displayName());
 
-        if (this.hasAttribute('category'))
-            projectInfoContainer.appendChild(this.displayCategoryAndTime());
+        // if (this.hasAttribute('category'))
+        //     projectInfoContainer.appendChild(this.displayCategoryAndTime());
 
         if (this.hasAttribute('description')) {
             const description = document.createElement('p');
