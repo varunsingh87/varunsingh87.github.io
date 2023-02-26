@@ -21,8 +21,8 @@ class Project extends HTMLLIElement {
 
         projectInfoContainer.appendChild(this.displayName());
 
-        if (this.hasAttribute('category'))
-            projectInfoContainer.appendChild(this.displayCategoryAndTime());
+        // if (this.hasAttribute('category'))
+        //     projectInfoContainer.appendChild(this.displayCategoryAndTime());
 
         if (this.hasAttribute('description')) {
             const description = document.createElement('p');
@@ -35,7 +35,7 @@ class Project extends HTMLLIElement {
         const skillStack = document.createElement('ul');
         skillStack.className = "skills-stack";
         const softwareDevTools = this.getAttribute('tools');
-        
+
         softwareDevTools.split(";").forEach(item => {
             const softwareDevTool = document.createElement('li');
             softwareDevTool.textContent = item;
@@ -87,7 +87,7 @@ class Project extends HTMLLIElement {
         const viewProject = document.createElement('a');
         viewProject.onclick = e => e.stopPropagation();
         viewProject.href = this.getAttribute('link');
-        viewProject.target = viewProject.href.includes('https://varunsingh.dev') ? "_self" : "_blank";
+        viewProject.target = viewProject.href.includes('https://varunsingh') ? "_self" : "_blank";
         viewProject.textContent = "Learn More";
         return viewProject;
     }

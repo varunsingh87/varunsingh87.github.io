@@ -8,12 +8,17 @@ html {
 
 header {
 	padding-top: 0;
+	background-image: url('../images/index.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+	min-height: 500px;
 }
 
 nav {
 	justify-content: center;
 	/* background: linear-gradient(to top, #373737, #212121); */
-	background-color: midnightblue;
 	padding: 1em 0;
 	margin: 0;
 	position: relative;
@@ -98,12 +103,12 @@ nav a:hover {
 }
 
 header h1 {
+	color: white;
 	margin-top: 30px;
 }
 
-header h1,
 .page-content h2,
-.page-content h3, p {
+.page-content h3 {
 	color: black;
 	text-align: center;
 	font-weight: normal;
@@ -116,6 +121,57 @@ nav a:hover {
 ul.project-list {
 	flex-direction: column;
 	justify-content: center;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+}
+
+.filters {
+	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+  }
+   
+  .filters * {
+	display: inline-block;
+  }
+   
+  .filters label {
+	padding: 0.5rem 1rem;
+	margin-bottom: 0.25rem;
+	border-radius: 2rem;
+	min-width: 50px;
+	line-height: normal;
+	cursor: pointer;
+	transition: all 0.1s;
+  }
+   
+  .filters label:hover {
+	background: #082c50;
+	color: var(--white);
+  }
+
+  [value="Web"]:checked ~ #main-content .project-list > li:not([data-category~="Web"]),
+  [value="Mobile"]:checked ~ #main-content .project-list > li:not([data-category~="Mobile"]),
+  [value="API"]:checked ~ #main-content .project-list > li:not([data-category~="API"]),
+[value="Open-Source"]:checked ~ #main-content .project-list > li:not([data-category~="Open-Source"]),
+[value="Scientific"]:checked ~ #main-content .project-list > li:not([data-category~="Scientific"]),
+[value="Freelancing"]:checked ~ #main-content .project-list > li:not([data-category~="Freelancing"]),
+[value="Borum"]:checked ~ #main-content .project-list > li:not([data-category~="Borum"]) {
+  display: none;
+}
+
+[value="All"]:checked ~ .filters label[for="All"],
+[value="Web"]:checked ~ .filters label[for="Web"],
+[value="Mobile"]:checked ~ .filters label[for="Mobile"],
+[value="API"]:checked ~ .filters label[for="API"],
+[value="Open-Source"]:checked ~ .filters label[for="Open-Source"],
+[value="Scientific"]:checked ~ .filters label[for="Scientific"],
+[value="Freelancing"]:checked ~ .filters label[for="Freelancing"],
+[value="Borum"]:checked ~ .filters label[for="Borum"] {
+  background: #082c50;
+  color: white;
 }
 
 .project-list li .project-info {
