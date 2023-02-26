@@ -21,8 +21,8 @@ class Project extends HTMLLIElement {
 
         projectInfoContainer.appendChild(this.displayName());
 
-        // if (this.hasAttribute('category'))
-        //     projectInfoContainer.appendChild(this.displayCategoryAndTime());
+        if (this.hasAttribute('category'))
+            projectInfoContainer.appendChild(this.displayTime())
 
         if (this.hasAttribute('description')) {
             const description = document.createElement('p');
@@ -41,12 +41,6 @@ class Project extends HTMLLIElement {
             softwareDevTool.textContent = item;
             skillStack.appendChild(softwareDevTool);
         });
-
-        projectInfoContainer.appendChild(skillStack);
-
-        const projectLinkContainer = document.createElement('div');
-        projectLinkContainer.className = "project-links";
-
         if (this.hasAttribute('github')) {
             const viewOnGitHub = document.createElement('a');
             viewOnGitHub.href = `https://github.com/${this.getAttribute('github')}`;
@@ -66,7 +60,6 @@ class Project extends HTMLLIElement {
         }
 
         this.appendChild(projectInfoContainer);
-        this.appendChild(projectLinkContainer);
     }
 
     displayName() {
@@ -76,9 +69,9 @@ class Project extends HTMLLIElement {
         return nameEl;
     }
 
-    displayCategoryAndTime() {
+    displayTime() {
         const category = document.createElement('p');
-        category.textContent = `${this.getAttribute('category')} | ${this.getAttribute('years')}`;
+        category.textContent = this.getAttribute('years');
         category.className = "subheading";
         return category;
     }

@@ -61,7 +61,8 @@
 					<p>
 						Since beginning my journey 6 years ago, I have built mobile applications, websites, APIs,
 						open-source, and scientific applications. I build services for clients and have worked on
-						projects for startups, hackathons, and my own startup, Borum Tech. I am a self-taught developer
+						projects for startups, hackathons, and my own suite of tools, Greenboard. I am a self-taught
+						developer
 						with a passion for learning and problem-solving.
 					</p>
 
@@ -79,7 +80,7 @@
 				<input type="radio" id="Open-Source" name="categories" value="Open-Source" />
 				<input type="radio" id="Scientific" name="categories" value="Scientific" />
 				<input type="radio" id="Freelancing" name="categories" value="Freelancing" />
-				<input type="radio" id="Borum" name="categories" value="Borum" />
+				<input type="radio" id="Greenboard" name="categories" value="Greenboard" />
 				<ol class="filters">
 					<li><label for="All">All</label></li>
 					<li><label for="Web">Web</label></li>
@@ -88,7 +89,7 @@
 					<li><label for="Open-Source">Open-Source</label></li>
 					<li><label for="Scientific">Scientific</label></li>
 					<li><label for="Freelancing">Freelancing</label></li>
-					<li><label for="Borum">Borum</label></li>
+					<li><label for="Greenboard">Greenboard</label></li>
 				</ol>
 
 				<div id="main-content" class="col-sm-12">
@@ -100,6 +101,14 @@
 								tools="Java;WordNet API;extJWNL;JUnit"
 								years="July 2019 - March 2020, September 2022 - February 2023"
 								github="varunsingh87/Frequency-Analysis-Simulator"></li>
+							<li is="software-project" data-category="Mobile" name="Greenboard Audio Mobile"
+								description="A lagless streaming platform" link="./GreenboardAudio"
+								img="./images/greenboard-audio.ico" tools="Flutter;Dart" years="August 2022"
+								github="Greenboard-LMS/GreenboardAudio-Mobile"></li>
+							<li is="software-project" data-category="Mobile" name="Greenboard Forums Mobile"
+								description="A platform for secure communities of teachers" link="./GreenboardForums"
+								img="./images/greenboard-forums.ico" tools="Flutter;Dart" years="August 2022"
+								github="Greenboard-LMS/GreenboardAudio-Mobile"></li>
 							<li is="software-project" name="Ambient Noise Remover"
 								description="A program that removes ambient noise from an audio file. It uses the Kalman Filter to estimate the noise and the Java Sound API to remove the byte data representing the noise."
 								data-category="Scientific" link="./Ambient-Noise-Remover"
@@ -118,55 +127,57 @@
 								github="varunsingh87/FarmaKarma"
 								tryitout="https://farmakarma.glitch.me"></li> -->
 
-							<li is="software-project" data-category="Borum Web" name="Flytrap for Web"
+							<li is="software-project" data-category="Greenboard Web" name="Flytrap for Web"
 								description="A SaaS product for storing and sharing audio files." link="/Flytrap-Web"
 								img="./images/flytrap.png" tools="PHP;HTML;CSS;JavaScript"
 								years="February 2020 - June 2020" github="varunsingh87/Flytrap-Web"
 								tryitout="https://audio.borumtech.com"></li>
 
-							<li is="software-project" data-category="Borum API Open-Source" name="Flytrap API"
+							<li is="software-project" data-category="Greenboard API Open-Source" name="Flytrap API"
 								description="REST API for Flytrap. I rewrote the front-end and back-end to use the REST API"
 								link="/Flytrap-API" img="./images/flytrap.png"
 								tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel" years="March 2021 - June 2021"
 								github="varunsingh87/Flytrap-API"
 								tryitout="https://developer.borumtech.com/Flytrap/Documentation/v1/Overview"></li>
 
-							<li is="software-project" data-category="Borum API" name="PHP Sleep"
+							<li is="software-project" data-category="Greenboard API" name="PHP Sleep"
 								description="A lightweight PHP library for building REST APIs" link="/PHP-Sleep"
 								img="./images/php-sleep.png" tools="PHP;MySQL;JSON;GuzzleHTTP;PHPUnit"
 								years="October 2020 - Present" github="varunsingh87/php-sleep"
 								tryitout="https://packagist.org/packages/varuns/php-sleep"></li>
-							<li is="software-project" data-category="Borum Web" name="Borum Jot for Web"
+							<li is="software-project" data-category="Greenboard Web" name="Greenboard Jot for Web"
 								description="An encrypted note and task management web app"
 								link="https://devpost.com/software/borum-jot" img="./images/borumjot.avif"
 								tools="JavaScript;React;NextJS;CSS" years="November 2020 - January 2021"
 								tryitout="https://jot.borumtech.com"></li>
-							<li is="software-project" data-category="Borum API" name="Borum Jot API"
-								description="A REST API and the back-end for my Borum Jot apps. It encrypts user data before storing it on a MySQL database"
+							<li is="software-project" data-category="Greenboard API" name="Greenboard Jot API"
+								description="A REST API and the back-end for my Greenboard Jot apps. It encrypts user data before storing it on a MySQL database"
 								link="https://devpost.com/software/borum-jot" img="./images/borumjot.png"
 								tools="PHP;PHP-Sleep;PHPUnit;SQL;MySQL;JSON;Vercel"
 								years="September 2020 - December 2020"
 								tryitout="https://developer.borumtech.com/Jot/Documentation/v1/Overview"></li>
-							<li is="software-project" data-category="Borum Mobile" name="Borum Jot Android"
+							<li is="software-project" data-category="Greenboard Mobile" name="Greenboard Jot Android"
 								description="An encrypted note and task management Android app"
 								link="https://devpost.com/software/borum-jot" img="./images/borumjot.png"
 								tools="Android SDK;XML" years="August 2020 - November 2020"
 								tryitout="https://play.google.com/store/apps/details?id=com.boruminc.borumjot.android">
 							</li>
-							<li is="software-project" data-category="Borum Web" name="Borum Dev Docs"
-								description="API documentation for Borum products' REST APIs and Borum open-source libraries"
-								link="./Borum-Developer-Docs" img="./images/borumtech.png"
+							<li is="software-project" data-category="Greenboard Web" name="Greenboard Dev Docs"
+								description="API documentation for Greenboard products' REST APIs and Greenboard open-source libraries"
+								link="./Greenboard-Developer-Docs" img="./images/borumtech.png"
 								tools="JavaScript;React;NextJS;CSS" years="September 2020 - Present"
 								github="varunsingh87/Borum-Dev-Documentation"
 								tryitout="https://developer.borumtech.com"></li>
-							<li is="software-project" data-category="Borum Web" name="Borum Forum"
-								description="A Q&A site" link="./BorumForum-Web" img="./images/borumtech.png"
+							<li is="software-project" data-category="Greenboard Web" name="Greenboard Forum"
+								description="A Q&A site" link="./GreenboardForum-Web" img="./images/borumtech.png"
 								tools="PHP;HTML;CSS;JavaScript" years="November 2018 - November 2019"
-								github="varunsingh87/BorumForum-Web" tryitout="https://forum.borumtech.com"></li>
-							<li is="software-project" data-category="Borum API" category="Borum" name="Borum Forum API"
-								description="A REST API for Borum accounts and the Borum Forum" link="./BorumForum-API"
-								img="./images/borumtech.png" tools="PHP;HTML;CSS;JavaScript"
-								years="October 2020 - Present" github="varunsingh87/BorumForum-API"
+								github="varunsingh87/GreenboardForums-Web" tryitout="https://forum.borumtech.com"></li>
+							<li is="software-project" data-category="Greenboard API" category="Greenboard"
+								name="Greenboard Forum API"
+								description="A REST API for Greenboard accounts and the Greenboard Forums"
+								link="./GreenboardForum-API" img="./images/borumtech.png"
+								tools="PHP;HTML;CSS;JavaScript" years="October 2020 - Present"
+								github="varunsingh87/GreenboardForum-API"
 								tryitout="https://developer.borumtech.com/Forum">
 							</li>
 							<li is="software-project" data-category="Web Freelancing"
